@@ -19,17 +19,16 @@
 #ifndef DISPATCH_H
 #define DISPATCH_H
 
-#include <vulkan/vk_layer.h>
 #include <vulkan/vulkan.h>
+#include <vulkan/vk_layer.h>
 
 namespace GFR {
 
 struct InstanceDispatchTable {
-
   PFN_vkGetPhysicalDeviceDisplayPropertiesKHR
-      GetPhysicalDeviceDisplayPropertiesKHR;
+    GetPhysicalDeviceDisplayPropertiesKHR;
   PFN_vkGetPhysicalDeviceDisplayPlanePropertiesKHR
-      GetPhysicalDeviceDisplayPlanePropertiesKHR;
+    GetPhysicalDeviceDisplayPlanePropertiesKHR;
   PFN_vkGetDisplayPlaneSupportedDisplaysKHR GetDisplayPlaneSupportedDisplaysKHR;
   PFN_vkGetDisplayModePropertiesKHR GetDisplayModePropertiesKHR;
   PFN_vkCreateDisplayModeKHR CreateDisplayModeKHR;
@@ -38,10 +37,10 @@ struct InstanceDispatchTable {
   PFN_vkDestroySurfaceKHR DestroySurfaceKHR;
   PFN_vkGetPhysicalDeviceSurfaceSupportKHR GetPhysicalDeviceSurfaceSupportKHR;
   PFN_vkGetPhysicalDeviceSurfaceCapabilitiesKHR
-      GetPhysicalDeviceSurfaceCapabilitiesKHR;
+    GetPhysicalDeviceSurfaceCapabilitiesKHR;
   PFN_vkGetPhysicalDeviceSurfaceFormatsKHR GetPhysicalDeviceSurfaceFormatsKHR;
   PFN_vkGetPhysicalDeviceSurfacePresentModesKHR
-      GetPhysicalDeviceSurfacePresentModesKHR;
+    GetPhysicalDeviceSurfacePresentModesKHR;
   PFN_vkCreateDebugReportCallbackEXT CreateDebugReportCallbackEXT;
   PFN_vkDestroyDebugReportCallbackEXT DestroyDebugReportCallbackEXT;
   PFN_vkDebugReportMessageEXT DebugReportMessageEXT;
@@ -51,62 +50,62 @@ struct InstanceDispatchTable {
   PFN_vkGetPhysicalDeviceProperties2KHR GetPhysicalDeviceProperties2KHR;
   PFN_vkGetPhysicalDeviceFormatProperties2 GetPhysicalDeviceFormatProperties2;
   PFN_vkGetPhysicalDeviceFormatProperties2KHR
-      GetPhysicalDeviceFormatProperties2KHR;
+    GetPhysicalDeviceFormatProperties2KHR;
   PFN_vkGetPhysicalDeviceImageFormatProperties2
-      GetPhysicalDeviceImageFormatProperties2;
+    GetPhysicalDeviceImageFormatProperties2;
   PFN_vkGetPhysicalDeviceImageFormatProperties2KHR
-      GetPhysicalDeviceImageFormatProperties2KHR;
+    GetPhysicalDeviceImageFormatProperties2KHR;
   PFN_vkGetPhysicalDeviceQueueFamilyProperties2
-      GetPhysicalDeviceQueueFamilyProperties2;
+    GetPhysicalDeviceQueueFamilyProperties2;
   PFN_vkGetPhysicalDeviceQueueFamilyProperties2KHR
-      GetPhysicalDeviceQueueFamilyProperties2KHR;
+    GetPhysicalDeviceQueueFamilyProperties2KHR;
   PFN_vkGetPhysicalDeviceMemoryProperties2 GetPhysicalDeviceMemoryProperties2;
   PFN_vkGetPhysicalDeviceMemoryProperties2KHR
-      GetPhysicalDeviceMemoryProperties2KHR;
+    GetPhysicalDeviceMemoryProperties2KHR;
   PFN_vkGetPhysicalDeviceSparseImageFormatProperties2
-      GetPhysicalDeviceSparseImageFormatProperties2;
+    GetPhysicalDeviceSparseImageFormatProperties2;
   PFN_vkGetPhysicalDeviceSparseImageFormatProperties2KHR
-      GetPhysicalDeviceSparseImageFormatProperties2KHR;
+    GetPhysicalDeviceSparseImageFormatProperties2KHR;
   PFN_vkGetPhysicalDeviceExternalBufferProperties
-      GetPhysicalDeviceExternalBufferProperties;
+    GetPhysicalDeviceExternalBufferProperties;
   PFN_vkGetPhysicalDeviceExternalBufferPropertiesKHR
-      GetPhysicalDeviceExternalBufferPropertiesKHR;
+    GetPhysicalDeviceExternalBufferPropertiesKHR;
   PFN_vkGetPhysicalDeviceExternalSemaphoreProperties
-      GetPhysicalDeviceExternalSemaphoreProperties;
+    GetPhysicalDeviceExternalSemaphoreProperties;
   PFN_vkGetPhysicalDeviceExternalSemaphorePropertiesKHR
-      GetPhysicalDeviceExternalSemaphorePropertiesKHR;
+    GetPhysicalDeviceExternalSemaphorePropertiesKHR;
   PFN_vkGetPhysicalDeviceExternalFenceProperties
-      GetPhysicalDeviceExternalFenceProperties;
+    GetPhysicalDeviceExternalFenceProperties;
   PFN_vkGetPhysicalDeviceExternalFencePropertiesKHR
-      GetPhysicalDeviceExternalFencePropertiesKHR;
+    GetPhysicalDeviceExternalFencePropertiesKHR;
   PFN_vkEnumeratePhysicalDeviceGroups EnumeratePhysicalDeviceGroups;
   PFN_vkEnumeratePhysicalDeviceGroupsKHR EnumeratePhysicalDeviceGroupsKHR;
   PFN_vkGetPhysicalDevicePresentRectanglesKHR
-      GetPhysicalDevicePresentRectanglesKHR;
+    GetPhysicalDevicePresentRectanglesKHR;
   PFN_vkGetPhysicalDeviceMultisamplePropertiesEXT
-      GetPhysicalDeviceMultisamplePropertiesEXT;
+    GetPhysicalDeviceMultisamplePropertiesEXT;
   PFN_vkGetPhysicalDeviceSurfaceCapabilities2KHR
-      GetPhysicalDeviceSurfaceCapabilities2KHR;
+    GetPhysicalDeviceSurfaceCapabilities2KHR;
   PFN_vkGetPhysicalDeviceSurfaceFormats2KHR GetPhysicalDeviceSurfaceFormats2KHR;
   PFN_vkGetPhysicalDeviceDisplayProperties2KHR
-      GetPhysicalDeviceDisplayProperties2KHR;
+    GetPhysicalDeviceDisplayProperties2KHR;
   PFN_vkGetPhysicalDeviceDisplayPlaneProperties2KHR
-      GetPhysicalDeviceDisplayPlaneProperties2KHR;
+    GetPhysicalDeviceDisplayPlaneProperties2KHR;
   PFN_vkGetDisplayModeProperties2KHR GetDisplayModeProperties2KHR;
   PFN_vkGetDisplayPlaneCapabilities2KHR GetDisplayPlaneCapabilities2KHR;
   PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT
-      GetPhysicalDeviceCalibrateableTimeDomainsEXT;
+    GetPhysicalDeviceCalibrateableTimeDomainsEXT;
   PFN_vkCreateDebugUtilsMessengerEXT CreateDebugUtilsMessengerEXT;
   PFN_vkDestroyDebugUtilsMessengerEXT DestroyDebugUtilsMessengerEXT;
   PFN_vkSubmitDebugUtilsMessageEXT SubmitDebugUtilsMessageEXT;
   PFN_vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR
-      EnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR;
+    EnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR;
   PFN_vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR
-      GetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR;
+    GetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR;
   PFN_vkCreateHeadlessSurfaceEXT CreateHeadlessSurfaceEXT;
   PFN_vkGetPhysicalDeviceToolPropertiesEXT GetPhysicalDeviceToolPropertiesEXT;
   PFN_vkGetPhysicalDeviceFragmentShadingRatesKHR
-      GetPhysicalDeviceFragmentShadingRatesKHR;
+    GetPhysicalDeviceFragmentShadingRatesKHR;
   PFN_vkAcquireDrmDisplayEXT AcquireDrmDisplayEXT;
   PFN_vkGetDrmDisplayEXT GetDrmDisplayEXT;
   PFN_vkCreateInstance CreateInstance;
@@ -115,17 +114,17 @@ struct InstanceDispatchTable {
   PFN_vkGetInstanceProcAddr GetInstanceProcAddr;
   PFN_vkGetPhysicalDeviceProperties GetPhysicalDeviceProperties;
   PFN_vkGetPhysicalDeviceQueueFamilyProperties
-      GetPhysicalDeviceQueueFamilyProperties;
+    GetPhysicalDeviceQueueFamilyProperties;
   PFN_vkGetPhysicalDeviceMemoryProperties GetPhysicalDeviceMemoryProperties;
   PFN_vkGetPhysicalDeviceFeatures GetPhysicalDeviceFeatures;
   PFN_vkGetPhysicalDeviceFormatProperties GetPhysicalDeviceFormatProperties;
   PFN_vkGetPhysicalDeviceImageFormatProperties
-      GetPhysicalDeviceImageFormatProperties;
+    GetPhysicalDeviceImageFormatProperties;
   PFN_vkCreateDevice CreateDevice;
   PFN_vkEnumerateDeviceLayerProperties EnumerateDeviceLayerProperties;
   PFN_vkEnumerateDeviceExtensionProperties EnumerateDeviceExtensionProperties;
   PFN_vkGetPhysicalDeviceSparseImageFormatProperties
-      GetPhysicalDeviceSparseImageFormatProperties;
+    GetPhysicalDeviceSparseImageFormatProperties;
 
 #ifdef VK_USE_PLATFORM_GGP
   PFN_vkCreateStreamDescriptorSurfaceGGP CreateStreamDescriptorSurfaceGGP;
@@ -134,7 +133,6 @@ struct InstanceDispatchTable {
 };
 
 struct DeviceDispatchTable {
-
   PFN_vkResetQueryPool ResetQueryPool;
   PFN_vkResetQueryPoolEXT ResetQueryPoolEXT;
   PFN_vkCmdDrawMultiEXT CmdDrawMultiEXT;
@@ -168,9 +166,9 @@ struct DeviceDispatchTable {
   PFN_vkCmdSetDeviceMask CmdSetDeviceMask;
   PFN_vkCmdSetDeviceMaskKHR CmdSetDeviceMaskKHR;
   PFN_vkGetDeviceGroupPresentCapabilitiesKHR
-      GetDeviceGroupPresentCapabilitiesKHR;
+    GetDeviceGroupPresentCapabilitiesKHR;
   PFN_vkGetDeviceGroupSurfacePresentModesKHR
-      GetDeviceGroupSurfacePresentModesKHR;
+    GetDeviceGroupSurfacePresentModesKHR;
   PFN_vkAcquireNextImage2KHR AcquireNextImage2KHR;
   PFN_vkCmdDispatchBase CmdDispatchBase;
   PFN_vkCmdDispatchBaseKHR CmdDispatchBaseKHR;
@@ -189,7 +187,7 @@ struct DeviceDispatchTable {
   PFN_vkGetImageMemoryRequirements2KHR GetImageMemoryRequirements2KHR;
   PFN_vkGetImageSparseMemoryRequirements2 GetImageSparseMemoryRequirements2;
   PFN_vkGetImageSparseMemoryRequirements2KHR
-      GetImageSparseMemoryRequirements2KHR;
+    GetImageSparseMemoryRequirements2KHR;
   PFN_vkCreateSamplerYcbcrConversion CreateSamplerYcbcrConversion;
   PFN_vkCreateSamplerYcbcrConversionKHR CreateSamplerYcbcrConversionKHR;
   PFN_vkDestroySamplerYcbcrConversion DestroySamplerYcbcrConversion;
@@ -233,34 +231,34 @@ struct DeviceDispatchTable {
   PFN_vkCmdCopyAccelerationStructureKHR CmdCopyAccelerationStructureKHR;
   PFN_vkCopyAccelerationStructureKHR CopyAccelerationStructureKHR;
   PFN_vkCmdCopyAccelerationStructureToMemoryKHR
-      CmdCopyAccelerationStructureToMemoryKHR;
+    CmdCopyAccelerationStructureToMemoryKHR;
   PFN_vkCopyAccelerationStructureToMemoryKHR
-      CopyAccelerationStructureToMemoryKHR;
+    CopyAccelerationStructureToMemoryKHR;
   PFN_vkCmdCopyMemoryToAccelerationStructureKHR
-      CmdCopyMemoryToAccelerationStructureKHR;
+    CmdCopyMemoryToAccelerationStructureKHR;
   PFN_vkCopyMemoryToAccelerationStructureKHR
-      CopyMemoryToAccelerationStructureKHR;
+    CopyMemoryToAccelerationStructureKHR;
   PFN_vkCmdWriteAccelerationStructuresPropertiesKHR
-      CmdWriteAccelerationStructuresPropertiesKHR;
+    CmdWriteAccelerationStructuresPropertiesKHR;
   PFN_vkWriteAccelerationStructuresPropertiesKHR
-      WriteAccelerationStructuresPropertiesKHR;
+    WriteAccelerationStructuresPropertiesKHR;
   PFN_vkCmdTraceRaysKHR CmdTraceRaysKHR;
   PFN_vkGetRayTracingShaderGroupHandlesKHR GetRayTracingShaderGroupHandlesKHR;
   PFN_vkGetRayTracingShaderGroupHandlesNV GetRayTracingShaderGroupHandlesNV;
   PFN_vkGetRayTracingCaptureReplayShaderGroupHandlesKHR
-      GetRayTracingCaptureReplayShaderGroupHandlesKHR;
+    GetRayTracingCaptureReplayShaderGroupHandlesKHR;
   PFN_vkCreateRayTracingPipelinesKHR CreateRayTracingPipelinesKHR;
   PFN_vkCmdTraceRaysIndirectKHR CmdTraceRaysIndirectKHR;
   PFN_vkGetDeviceAccelerationStructureCompatibilityKHR
-      GetDeviceAccelerationStructureCompatibilityKHR;
+    GetDeviceAccelerationStructureCompatibilityKHR;
   PFN_vkGetRayTracingShaderGroupStackSizeKHR
-      GetRayTracingShaderGroupStackSizeKHR;
+    GetRayTracingShaderGroupStackSizeKHR;
   PFN_vkCmdSetRayTracingPipelineStackSizeKHR
-      CmdSetRayTracingPipelineStackSizeKHR;
+    CmdSetRayTracingPipelineStackSizeKHR;
   PFN_vkAcquireProfilingLockKHR AcquireProfilingLockKHR;
   PFN_vkReleaseProfilingLockKHR ReleaseProfilingLockKHR;
   PFN_vkGetImageDrmFormatModifierPropertiesEXT
-      GetImageDrmFormatModifierPropertiesEXT;
+    GetImageDrmFormatModifierPropertiesEXT;
   PFN_vkGetBufferOpaqueCaptureAddress GetBufferOpaqueCaptureAddress;
   PFN_vkGetBufferOpaqueCaptureAddressKHR GetBufferOpaqueCaptureAddressKHR;
   PFN_vkGetBufferDeviceAddress GetBufferDeviceAddress;
@@ -268,23 +266,23 @@ struct DeviceDispatchTable {
   PFN_vkGetBufferDeviceAddressEXT GetBufferDeviceAddressEXT;
   PFN_vkGetDeviceMemoryOpaqueCaptureAddress GetDeviceMemoryOpaqueCaptureAddress;
   PFN_vkGetDeviceMemoryOpaqueCaptureAddressKHR
-      GetDeviceMemoryOpaqueCaptureAddressKHR;
+    GetDeviceMemoryOpaqueCaptureAddressKHR;
   PFN_vkGetPipelineExecutablePropertiesKHR GetPipelineExecutablePropertiesKHR;
   PFN_vkGetPipelineExecutableStatisticsKHR GetPipelineExecutableStatisticsKHR;
   PFN_vkGetPipelineExecutableInternalRepresentationsKHR
-      GetPipelineExecutableInternalRepresentationsKHR;
+    GetPipelineExecutableInternalRepresentationsKHR;
   PFN_vkCmdSetLineStippleEXT CmdSetLineStippleEXT;
   PFN_vkCreateAccelerationStructureKHR CreateAccelerationStructureKHR;
   PFN_vkCmdBuildAccelerationStructuresKHR CmdBuildAccelerationStructuresKHR;
   PFN_vkCmdBuildAccelerationStructuresIndirectKHR
-      CmdBuildAccelerationStructuresIndirectKHR;
+    CmdBuildAccelerationStructuresIndirectKHR;
   PFN_vkBuildAccelerationStructuresKHR BuildAccelerationStructuresKHR;
   PFN_vkGetAccelerationStructureDeviceAddressKHR
-      GetAccelerationStructureDeviceAddressKHR;
+    GetAccelerationStructureDeviceAddressKHR;
   PFN_vkCreateDeferredOperationKHR CreateDeferredOperationKHR;
   PFN_vkDestroyDeferredOperationKHR DestroyDeferredOperationKHR;
   PFN_vkGetDeferredOperationMaxConcurrencyKHR
-      GetDeferredOperationMaxConcurrencyKHR;
+    GetDeferredOperationMaxConcurrencyKHR;
   PFN_vkGetDeferredOperationResultKHR GetDeferredOperationResultKHR;
   PFN_vkDeferredOperationJoinKHR DeferredOperationJoinKHR;
   PFN_vkCmdSetCullModeEXT CmdSetCullModeEXT;
@@ -312,7 +310,7 @@ struct DeviceDispatchTable {
   PFN_vkCmdResolveImage2KHR CmdResolveImage2KHR;
   PFN_vkCmdSetFragmentShadingRateKHR CmdSetFragmentShadingRateKHR;
   PFN_vkGetAccelerationStructureBuildSizesKHR
-      GetAccelerationStructureBuildSizesKHR;
+    GetAccelerationStructureBuildSizesKHR;
   PFN_vkCmdSetVertexInputEXT CmdSetVertexInputEXT;
   PFN_vkCmdSetColorWriteEnableEXT CmdSetColorWriteEnableEXT;
   PFN_vkCmdSetEvent2KHR CmdSetEvent2KHR;
@@ -328,7 +326,7 @@ struct DeviceDispatchTable {
   PFN_vkEnumerateInstanceVersion EnumerateInstanceVersion;
   PFN_vkEnumerateInstanceLayerProperties EnumerateInstanceLayerProperties;
   PFN_vkEnumerateInstanceExtensionProperties
-      EnumerateInstanceExtensionProperties;
+    EnumerateInstanceExtensionProperties;
   PFN_vkGetDeviceQueue GetDeviceQueue;
   PFN_vkQueueSubmit QueueSubmit;
   PFN_vkQueueWaitIdle QueueWaitIdle;

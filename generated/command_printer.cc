@@ -2230,8 +2230,8 @@ const char *VkSubpassContentsToString(VkSubpassContents e) {
     return "Unknown VkSubpassContents";
   }
 }
-const char *
-VkSurfaceTransformFlagBitsKHRToString(VkSurfaceTransformFlagBitsKHR e) {
+const char *VkSurfaceTransformFlagBitsKHRToString(
+  VkSurfaceTransformFlagBitsKHR e) {
   switch (e) {
   case VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR:
     return "VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR";
@@ -2255,8 +2255,8 @@ VkSurfaceTransformFlagBitsKHRToString(VkSurfaceTransformFlagBitsKHR e) {
     return "Unknown VkSurfaceTransformFlagBitsKHR";
   }
 }
-const char *
-VkDisplayPlaneAlphaFlagBitsKHRToString(VkDisplayPlaneAlphaFlagBitsKHR e) {
+const char *VkDisplayPlaneAlphaFlagBitsKHRToString(
+  VkDisplayPlaneAlphaFlagBitsKHR e) {
   switch (e) {
   case VK_DISPLAY_PLANE_ALPHA_OPAQUE_BIT_KHR:
     return "VK_DISPLAY_PLANE_ALPHA_OPAQUE_BIT_KHR";
@@ -2467,7 +2467,7 @@ const char *VkDebugReportObjectTypeEXTToString(VkDebugReportObjectTypeEXT e) {
   }
 }
 const char *VkExternalMemoryHandleTypeFlagBitsToString(
-    VkExternalMemoryHandleTypeFlagBits e) {
+  VkExternalMemoryHandleTypeFlagBits e) {
   switch (e) {
   case VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT:
     return "VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT";
@@ -2494,7 +2494,7 @@ const char *VkExternalMemoryHandleTypeFlagBitsToString(
   }
 }
 const char *VkExternalSemaphoreHandleTypeFlagBitsToString(
-    VkExternalSemaphoreHandleTypeFlagBits e) {
+  VkExternalSemaphoreHandleTypeFlagBits e) {
   switch (e) {
   case VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT:
     return "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT";
@@ -2510,8 +2510,8 @@ const char *VkExternalSemaphoreHandleTypeFlagBitsToString(
     return "Unknown VkExternalSemaphoreHandleTypeFlagBits";
   }
 }
-const char *
-VkExternalFenceHandleTypeFlagBitsToString(VkExternalFenceHandleTypeFlagBits e) {
+const char *VkExternalFenceHandleTypeFlagBitsToString(
+  VkExternalFenceHandleTypeFlagBits e) {
   switch (e) {
   case VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT:
     return "VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT";
@@ -2525,8 +2525,8 @@ VkExternalFenceHandleTypeFlagBitsToString(VkExternalFenceHandleTypeFlagBits e) {
     return "Unknown VkExternalFenceHandleTypeFlagBits";
   }
 }
-const char *
-VkDescriptorUpdateTemplateTypeToString(VkDescriptorUpdateTemplateType e) {
+const char *VkDescriptorUpdateTemplateTypeToString(
+  VkDescriptorUpdateTemplateType e) {
   switch (e) {
   case VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET:
     return "VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET";
@@ -2536,8 +2536,8 @@ VkDescriptorUpdateTemplateTypeToString(VkDescriptorUpdateTemplateType e) {
     return "Unknown VkDescriptorUpdateTemplateType";
   }
 }
-const char *
-VkSamplerYcbcrModelConversionToString(VkSamplerYcbcrModelConversion e) {
+const char *VkSamplerYcbcrModelConversionToString(
+  VkSamplerYcbcrModelConversion e) {
   switch (e) {
   case VK_SAMPLER_YCBCR_MODEL_CONVERSION_RGB_IDENTITY:
     return "VK_SAMPLER_YCBCR_MODEL_CONVERSION_RGB_IDENTITY";
@@ -2678,7 +2678,7 @@ const char *VkObjectTypeToString(VkObjectType e) {
   }
 }
 const char *VkDebugUtilsMessageSeverityFlagBitsEXTToString(
-    VkDebugUtilsMessageSeverityFlagBitsEXT e) {
+  VkDebugUtilsMessageSeverityFlagBitsEXT e) {
   switch (e) {
   case VK_DEBUG_UTILS_MESSAGE_SEVERITY_VERBOSE_BIT_EXT:
     return "VK_DEBUG_UTILS_MESSAGE_SEVERITY_VERBOSE_BIT_EXT";
@@ -2693,7 +2693,7 @@ const char *VkDebugUtilsMessageSeverityFlagBitsEXTToString(
   }
 }
 const char *VkCopyAccelerationStructureModeKHRToString(
-    VkCopyAccelerationStructureModeKHR e) {
+  VkCopyAccelerationStructureModeKHR e) {
   switch (e) {
   case VK_COPY_ACCELERATION_STRUCTURE_MODE_CLONE_KHR:
     return "VK_COPY_ACCELERATION_STRUCTURE_MODE_CLONE_KHR";
@@ -2707,8 +2707,8 @@ const char *VkCopyAccelerationStructureModeKHRToString(
     return "Unknown VkCopyAccelerationStructureModeKHR";
   }
 }
-const char *
-VkRayTracingShaderGroupTypeKHRToString(VkRayTracingShaderGroupTypeKHR e) {
+const char *VkRayTracingShaderGroupTypeKHRToString(
+  VkRayTracingShaderGroupTypeKHR e) {
   switch (e) {
   case VK_RAY_TRACING_SHADER_GROUP_TYPE_GENERAL_KHR:
     return "VK_RAY_TRACING_SHADER_GROUP_TYPE_GENERAL_KHR";
@@ -2721,7 +2721,7 @@ VkRayTracingShaderGroupTypeKHRToString(VkRayTracingShaderGroupTypeKHR e) {
   }
 }
 const char *VkAccelerationStructureCompatibilityKHRToString(
-    VkAccelerationStructureCompatibilityKHR e) {
+  VkAccelerationStructureCompatibilityKHR e) {
   switch (e) {
   case VK_ACCELERATION_STRUCTURE_COMPATIBILITY_COMPATIBLE_KHR:
     return "VK_ACCELERATION_STRUCTURE_COMPATIBILITY_COMPATIBLE_KHR";
@@ -2773,8 +2773,8 @@ const char *VkPerformanceCounterUnitKHRToString(VkPerformanceCounterUnitKHR e) {
     return "Unknown VkPerformanceCounterUnitKHR";
   }
 }
-const char *
-VkPerformanceCounterScopeKHRToString(VkPerformanceCounterScopeKHR e) {
+const char *VkPerformanceCounterScopeKHRToString(
+  VkPerformanceCounterScopeKHR e) {
   switch (e) {
   case VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_BUFFER_KHR:
     return "VK_PERFORMANCE_COUNTER_SCOPE_COMMAND_BUFFER_KHR";
@@ -2786,8 +2786,8 @@ VkPerformanceCounterScopeKHRToString(VkPerformanceCounterScopeKHR e) {
     return "Unknown VkPerformanceCounterScopeKHR";
   }
 }
-const char *
-VkPerformanceCounterStorageKHRToString(VkPerformanceCounterStorageKHR e) {
+const char *VkPerformanceCounterStorageKHRToString(
+  VkPerformanceCounterStorageKHR e) {
   switch (e) {
   case VK_PERFORMANCE_COUNTER_STORAGE_INT32_KHR:
     return "VK_PERFORMANCE_COUNTER_STORAGE_INT32_KHR";
@@ -2806,7 +2806,7 @@ VkPerformanceCounterStorageKHRToString(VkPerformanceCounterStorageKHR e) {
   }
 }
 const char *VkPipelineExecutableStatisticFormatKHRToString(
-    VkPipelineExecutableStatisticFormatKHR e) {
+  VkPipelineExecutableStatisticFormatKHR e) {
   switch (e) {
   case VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_BOOL32_KHR:
     return "VK_PIPELINE_EXECUTABLE_STATISTIC_FORMAT_BOOL32_KHR";
@@ -2820,8 +2820,8 @@ const char *VkPipelineExecutableStatisticFormatKHRToString(
     return "Unknown VkPipelineExecutableStatisticFormatKHR";
   }
 }
-const char *
-VkAccelerationStructureTypeKHRToString(VkAccelerationStructureTypeKHR e) {
+const char *VkAccelerationStructureTypeKHRToString(
+  VkAccelerationStructureTypeKHR e) {
   switch (e) {
   case VK_ACCELERATION_STRUCTURE_TYPE_TOP_LEVEL_KHR:
     return "VK_ACCELERATION_STRUCTURE_TYPE_TOP_LEVEL_KHR";
@@ -2834,7 +2834,7 @@ VkAccelerationStructureTypeKHRToString(VkAccelerationStructureTypeKHR e) {
   }
 }
 const char *VkBuildAccelerationStructureModeKHRToString(
-    VkBuildAccelerationStructureModeKHR e) {
+  VkBuildAccelerationStructureModeKHR e) {
   switch (e) {
   case VK_BUILD_ACCELERATION_STRUCTURE_MODE_BUILD_KHR:
     return "VK_BUILD_ACCELERATION_STRUCTURE_MODE_BUILD_KHR";
@@ -2857,7 +2857,7 @@ const char *VkGeometryTypeKHRToString(VkGeometryTypeKHR e) {
   }
 }
 const char *VkFragmentShadingRateCombinerOpKHRToString(
-    VkFragmentShadingRateCombinerOpKHR e) {
+  VkFragmentShadingRateCombinerOpKHR e) {
   switch (e) {
   case VK_FRAGMENT_SHADING_RATE_COMBINER_OP_KEEP_KHR:
     return "VK_FRAGMENT_SHADING_RATE_COMBINER_OP_KEEP_KHR";
@@ -2874,7 +2874,7 @@ const char *VkFragmentShadingRateCombinerOpKHRToString(
   }
 }
 const char *VkAccelerationStructureBuildTypeKHRToString(
-    VkAccelerationStructureBuildTypeKHR e) {
+  VkAccelerationStructureBuildTypeKHR e) {
   switch (e) {
   case VK_ACCELERATION_STRUCTURE_BUILD_TYPE_HOST_KHR:
     return "VK_ACCELERATION_STRUCTURE_BUILD_TYPE_HOST_KHR";
@@ -3988,9 +3988,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineRasterizationStateRasterizationOrderAMD &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPipelineRasterizationStateRasterizationOrderAMD &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -5575,9 +5575,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceSampleLocationsPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceSampleLocationsPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -5714,9 +5713,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceInlineUniformBlockFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceInlineUniformBlockFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -5756,9 +5754,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceInlineUniformBlockPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceInlineUniformBlockPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -5876,9 +5873,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkDescriptorPoolInlineUniformBlockCreateInfoEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkDescriptorPoolInlineUniformBlockCreateInfoEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -6051,9 +6047,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceGlobalPriorityQueryFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceGlobalPriorityQueryFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -6510,9 +6505,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceDeviceMemoryReportFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceDeviceMemoryReportFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -6738,9 +6732,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceExternalMemoryHostPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceExternalMemoryHostPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -7240,9 +7233,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkWriteDescriptorSetAccelerationStructureKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkWriteDescriptorSetAccelerationStructureKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -7296,9 +7288,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceAccelerationStructureFeaturesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceAccelerationStructureFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -7360,9 +7351,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceRayTracingPipelineFeaturesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceRayTracingPipelineFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -7458,9 +7448,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceAccelerationStructurePropertiesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceAccelerationStructurePropertiesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -7549,9 +7539,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceRayTracingPipelinePropertiesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceRayTracingPipelinePropertiesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -7770,9 +7759,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceImageDrmFormatModifierInfoEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceImageDrmFormatModifierInfoEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -7891,9 +7879,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkImageDrmFormatModifierExplicitCreateInfoEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkImageDrmFormatModifierExplicitCreateInfoEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -8016,9 +8003,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceFragmentDensityMapFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceFragmentDensityMapFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -8063,9 +8049,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceFragmentDensityMap2FeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceFragmentDensityMap2FeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -8096,9 +8081,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceFragmentDensityMapPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceFragmentDensityMapPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -8143,9 +8127,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceFragmentDensityMap2PropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceFragmentDensityMap2PropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -8294,9 +8277,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineRasterizationDepthClipStateCreateInfoEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPipelineRasterizationDepthClipStateCreateInfoEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -8536,9 +8519,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDevicePerformanceQueryPropertiesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDevicePerformanceQueryPropertiesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -8971,9 +8953,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9018,9 +9000,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9262,9 +9244,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineExecutableInternalRepresentationKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPipelineExecutableInternalRepresentationKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9338,9 +9319,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9371,9 +9352,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9404,9 +9384,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9460,9 +9440,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceSubgroupSizeControlFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceSubgroupSizeControlFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9500,9 +9479,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceSubgroupSizeControlPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceSubgroupSizeControlPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9554,9 +9532,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9587,9 +9565,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceLineRasterizationFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceLineRasterizationFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9655,9 +9632,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceLineRasterizationPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceLineRasterizationPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9688,9 +9664,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineRasterizationLineStateCreateInfoEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPipelineRasterizationLineStateCreateInfoEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9742,9 +9717,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDevicePipelineCreationCacheControlFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDevicePipelineCreationCacheControlFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9938,9 +9913,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceCustomBorderColorPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceCustomBorderColorPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -9971,9 +9945,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceCustomBorderColorFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceCustomBorderColorFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -10056,9 +10029,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkAccelerationStructureGeometryTrianglesDataKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkAccelerationStructureGeometryTrianglesDataKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -10170,9 +10142,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkAccelerationStructureGeometryInstancesDataKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkAccelerationStructureGeometryInstancesDataKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -10937,9 +10908,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceExtendedDynamicStateFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceExtendedDynamicStateFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -10970,9 +10940,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceExtendedDynamicState2FeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceExtendedDynamicState2FeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -11017,9 +10986,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -11051,8 +11020,8 @@ operator<<(std::ostream &os,
 }
 
 std::ostream &operator<<(
-    std::ostream &os,
-    const VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR &t) {
+  std::ostream &os,
+  const VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -11200,9 +11169,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -12064,9 +12033,9 @@ std::ostream &operator<<(std::ostream &os, const VkResolveImageInfo2KHR &t) {
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -12150,9 +12119,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineFragmentShadingRateStateCreateInfoKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPipelineFragmentShadingRateStateCreateInfoKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -12204,9 +12172,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceFragmentShadingRateFeaturesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceFragmentShadingRateFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -12251,9 +12218,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceFragmentShadingRatePropertiesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceFragmentShadingRatePropertiesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -12448,9 +12414,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -12527,9 +12493,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -13419,9 +13385,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -13491,9 +13456,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceProvokingVertexPropertiesEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceProvokingVertexPropertiesEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -13533,9 +13497,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineRasterizationProvokingVertexStateCreateInfoEXT &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPipelineRasterizationProvokingVertexStateCreateInfoEXT &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -22899,9 +22863,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -23233,9 +23197,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPipelineTessellationDomainOriginStateCreateInfo &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPipelineTessellationDomainOriginStateCreateInfo &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -23443,9 +23407,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceSamplerYcbcrConversionFeatures &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceSamplerYcbcrConversionFeatures &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -23476,9 +23439,8 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkSamplerYcbcrConversionImageFormatProperties &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkSamplerYcbcrConversionImageFormatProperties &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -23649,9 +23611,8 @@ std::ostream &operator<<(std::ostream &os, const VkDeviceQueueInfo2 &t) {
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceSamplerFilterMinmaxProperties &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceSamplerFilterMinmaxProperties &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -23845,9 +23806,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceShaderDrawParametersFeatures &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceShaderDrawParametersFeatures &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -24273,9 +24233,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceDescriptorIndexingProperties &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceDescriptorIndexingProperties &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -24541,9 +24500,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkDescriptorSetVariableDescriptorCountAllocateInfo &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkDescriptorSetVariableDescriptorCountAllocateInfo &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -24595,9 +24554,9 @@ operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkDescriptorSetVariableDescriptorCountLayoutSupport &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkDescriptorSetVariableDescriptorCountLayoutSupport &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -25636,9 +25595,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceDepthStencilResolveProperties &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceDepthStencilResolveProperties &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -25806,9 +25764,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceUniformBufferStandardLayoutFeatures &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceUniformBufferStandardLayoutFeatures &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -25948,9 +25906,8 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceImagelessFramebufferFeatures &t) {
+std::ostream &operator<<(
+  std::ostream &os, const VkPhysicalDeviceImagelessFramebufferFeatures &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -26177,9 +26134,9 @@ std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-std::ostream &
-operator<<(std::ostream &os,
-           const VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures &t) {
+std::ostream &operator<<(
+  std::ostream &os,
+  const VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures &t) {
   ScopedOstream sos(os);
   {
     os << "- # parameter:" << std::endl;
@@ -27549,7 +27506,6 @@ std::ostream &operator<<(std::ostream &os, const VkWriteDescriptorSet &t) {
 //  Print out a VkStruct
 std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
   switch (pStruct->sType) {
-
   case VK_STRUCTURE_TYPE_DISPLAY_MODE_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkDisplayModeCreateInfoKHR *>(pStruct);
     break;
@@ -27567,11 +27523,11 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_DEBUG_REPORT_CALLBACK_CREATE_INFO_EXT:
     os << *reinterpret_cast<const VkDebugReportCallbackCreateInfoEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_RASTERIZATION_ORDER_AMD:
     os << *reinterpret_cast<
-        const VkPipelineRasterizationStateRasterizationOrderAMD *>(pStruct);
+      const VkPipelineRasterizationStateRasterizationOrderAMD *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEBUG_MARKER_OBJECT_NAME_INFO_EXT:
     os << *reinterpret_cast<const VkDebugMarkerObjectNameInfoEXT *>(pStruct);
@@ -27584,11 +27540,12 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTI_DRAW_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceMultiDrawPropertiesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PUSH_DESCRIPTOR_PROPERTIES_KHR:
-    os << *reinterpret_cast<
-        const VkPhysicalDevicePushDescriptorPropertiesKHR *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPhysicalDevicePushDescriptorPropertiesKHR *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_PRESENT_REGIONS_KHR:
     os << *reinterpret_cast<const VkPresentRegionsKHR *>(pStruct);
@@ -27616,7 +27573,7 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_DEVICE_GROUP_PRESENT_CAPABILITIES_KHR:
     os << *reinterpret_cast<const VkDeviceGroupPresentCapabilitiesKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_IMAGE_SWAPCHAIN_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkImageSwapchainCreateInfoKHR *>(pStruct);
@@ -27632,15 +27589,15 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_DEVICE_GROUP_SWAPCHAIN_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkDeviceGroupSwapchainCreateInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DISPLAY_NATIVE_HDR_SURFACE_CAPABILITIES_AMD:
     os << *reinterpret_cast<const VkDisplayNativeHdrSurfaceCapabilitiesAMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_SWAPCHAIN_DISPLAY_NATIVE_HDR_CREATE_INFO_AMD:
     os << *reinterpret_cast<const VkSwapchainDisplayNativeHdrCreateInfoAMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SURFACE_INFO_2_KHR:
     os << *reinterpret_cast<const VkPhysicalDeviceSurfaceInfo2KHR *>(pStruct);
@@ -27668,61 +27625,62 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_SHARED_PRESENT_SURFACE_CAPABILITIES_KHR:
     os << *reinterpret_cast<const VkSharedPresentSurfaceCapabilitiesKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD:
     os << *reinterpret_cast<const VkTextureLODGatherFormatPropertiesAMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_SAMPLE_LOCATIONS_INFO_EXT:
     os << *reinterpret_cast<const VkSampleLocationsInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_RENDER_PASS_SAMPLE_LOCATIONS_BEGIN_INFO_EXT:
     os << *reinterpret_cast<const VkRenderPassSampleLocationsBeginInfoEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_SAMPLE_LOCATIONS_STATE_CREATE_INFO_EXT:
-    os << *reinterpret_cast<
-        const VkPipelineSampleLocationsStateCreateInfoEXT *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPipelineSampleLocationsStateCreateInfoEXT *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLE_LOCATIONS_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceSampleLocationsPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceSampleLocationsPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_MULTISAMPLE_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkMultisamplePropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTI_DRAW_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceMultiDrawFeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceInlineUniformBlockFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceInlineUniformBlockFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceInlineUniformBlockPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceInlineUniformBlockPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_INLINE_UNIFORM_BLOCK_EXT:
     os << *reinterpret_cast<const VkWriteDescriptorSetInlineUniformBlockEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_INLINE_UNIFORM_BLOCK_CREATE_INFO_EXT:
     os << *reinterpret_cast<
-        const VkDescriptorPoolInlineUniformBlockCreateInfoEXT *>(pStruct);
+      const VkDescriptorPoolInlineUniformBlockCreateInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_EXT:
     os << *reinterpret_cast<const VkDeviceQueueGlobalPriorityCreateInfoEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GLOBAL_PRIORITY_QUERY_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceGlobalPriorityQueryFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceGlobalPriorityQueryFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_QUEUE_FAMILY_GLOBAL_PRIORITY_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkQueueFamilyGlobalPriorityPropertiesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_NAME_INFO_EXT:
     os << *reinterpret_cast<const VkDebugUtilsObjectNameInfoEXT *>(pStruct);
@@ -27735,23 +27693,23 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT:
     os << *reinterpret_cast<const VkDebugUtilsMessengerCreateInfoEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CALLBACK_DATA_EXT:
     os << *reinterpret_cast<const VkDebugUtilsMessengerCallbackDataEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_MEMORY_REPORT_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceDeviceMemoryReportFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceDeviceMemoryReportFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEVICE_DEVICE_MEMORY_REPORT_CREATE_INFO_EXT:
     os << *reinterpret_cast<const VkDeviceDeviceMemoryReportCreateInfoEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEVICE_MEMORY_REPORT_CALLBACK_DATA_EXT:
     os << *reinterpret_cast<const VkDeviceMemoryReportCallbackDataEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_IMPORT_MEMORY_HOST_POINTER_INFO_EXT:
     os << *reinterpret_cast<const VkImportMemoryHostPointerInfoEXT *>(pStruct);
@@ -27761,142 +27719,145 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_MEMORY_HOST_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceExternalMemoryHostPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceExternalMemoryHostPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_CALIBRATED_TIMESTAMP_INFO_EXT:
     os << *reinterpret_cast<const VkCalibratedTimestampInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_AMD:
     os << *reinterpret_cast<const VkPhysicalDeviceShaderCorePropertiesAMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_2_AMD:
     os << *reinterpret_cast<const VkPhysicalDeviceShaderCoreProperties2AMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PCI_BUS_INFO_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkPhysicalDevicePCIBusInfoPropertiesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_RAY_TRACING_SHADER_GROUP_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkRayTracingShaderGroupCreateInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_RAY_TRACING_PIPELINE_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkRayTracingPipelineCreateInfoKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_ACCELERATION_STRUCTURE_KHR:
     os << *reinterpret_cast<
-        const VkWriteDescriptorSetAccelerationStructureKHR *>(pStruct);
+      const VkWriteDescriptorSetAccelerationStructureKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ACCELERATION_STRUCTURE_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceAccelerationStructureFeaturesKHR *>(pStruct);
+      const VkPhysicalDeviceAccelerationStructureFeaturesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_PIPELINE_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceRayTracingPipelineFeaturesKHR *>(pStruct);
+      const VkPhysicalDeviceRayTracingPipelineFeaturesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_QUERY_FEATURES_KHR:
     os << *reinterpret_cast<const VkPhysicalDeviceRayQueryFeaturesKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ACCELERATION_STRUCTURE_PROPERTIES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceAccelerationStructurePropertiesKHR *>(pStruct);
+      const VkPhysicalDeviceAccelerationStructurePropertiesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_PIPELINE_PROPERTIES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceRayTracingPipelinePropertiesKHR *>(pStruct);
+      const VkPhysicalDeviceRayTracingPipelinePropertiesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_EXT:
     os << *reinterpret_cast<const VkDrmFormatModifierPropertiesListEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_DRM_FORMAT_MODIFIER_INFO_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceImageDrmFormatModifierInfoEXT *>(pStruct);
+      const VkPhysicalDeviceImageDrmFormatModifierInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_LIST_CREATE_INFO_EXT:
     os << *reinterpret_cast<const VkImageDrmFormatModifierListCreateInfoEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_EXPLICIT_CREATE_INFO_EXT:
     os << *reinterpret_cast<
-        const VkImageDrmFormatModifierExplicitCreateInfoEXT *>(pStruct);
+      const VkImageDrmFormatModifierExplicitCreateInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkImageDrmFormatModifierPropertiesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEVICE_MEMORY_OVERALLOCATION_CREATE_INFO_AMD:
     os << *reinterpret_cast<const VkDeviceMemoryOverallocationCreateInfoAMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceFragmentDensityMapFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceFragmentDensityMapFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_2_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceFragmentDensityMap2FeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceFragmentDensityMap2FeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceFragmentDensityMapPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceFragmentDensityMapPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_2_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceFragmentDensityMap2PropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceFragmentDensityMap2PropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_RENDER_PASS_FRAGMENT_DENSITY_MAP_CREATE_INFO_EXT:
-    os << *reinterpret_cast<
-        const VkRenderPassFragmentDensityMapCreateInfoEXT *>(pStruct);
+    os
+      << *reinterpret_cast<const VkRenderPassFragmentDensityMapCreateInfoEXT *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_SURFACE_PROTECTED_CAPABILITIES_KHR:
     os << *reinterpret_cast<const VkSurfaceProtectedCapabilitiesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_CLIP_ENABLE_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceDepthClipEnableFeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_DEPTH_CLIP_STATE_CREATE_INFO_EXT:
     os << *reinterpret_cast<
-        const VkPipelineRasterizationDepthClipStateCreateInfoEXT *>(pStruct);
+      const VkPipelineRasterizationDepthClipStateCreateInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_BUDGET_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceMemoryBudgetPropertiesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PRIORITY_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceMemoryPriorityFeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_MEMORY_PRIORITY_ALLOCATE_INFO_EXT:
     os << *reinterpret_cast<const VkMemoryPriorityAllocateInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_YCBCR_IMAGE_ARRAYS_FEATURES_EXT:
-    os << *reinterpret_cast<
-        const VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PERFORMANCE_QUERY_FEATURES_KHR:
-    os << *reinterpret_cast<
-        const VkPhysicalDevicePerformanceQueryFeaturesKHR *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPhysicalDevicePerformanceQueryFeaturesKHR *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PERFORMANCE_QUERY_PROPERTIES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDevicePerformanceQueryPropertiesKHR *>(pStruct);
+      const VkPhysicalDevicePerformanceQueryPropertiesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PERFORMANCE_COUNTER_KHR:
     os << *reinterpret_cast<const VkPerformanceCounterKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PERFORMANCE_COUNTER_DESCRIPTION_KHR:
     os << *reinterpret_cast<const VkPerformanceCounterDescriptionKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_QUERY_POOL_PERFORMANCE_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkQueryPoolPerformanceCreateInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACQUIRE_PROFILING_LOCK_INFO_KHR:
     os << *reinterpret_cast<const VkAcquireProfilingLockInfoKHR *>(pStruct);
@@ -27909,20 +27870,19 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR:
     os << *reinterpret_cast<const VkPhysicalDeviceShaderClockFeaturesKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INDEX_TYPE_UINT8_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceIndexTypeUint8FeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADER_INTERLOCK_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_EXECUTABLE_PROPERTIES_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *>(
-        pStruct);
+      const VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_INFO_KHR:
     os << *reinterpret_cast<const VkPipelineInfoKHR *>(pStruct);
@@ -27938,163 +27898,164 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_INTERNAL_REPRESENTATION_KHR:
     os << *reinterpret_cast<
-        const VkPipelineExecutableInternalRepresentationKHR *>(pStruct);
+      const VkPipelineExecutableInternalRepresentationKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DEMOTE_TO_HELPER_INVOCATION_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT *>(
-        pStruct);
+      const VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT *>(
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceSubgroupSizeControlFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceSubgroupSizeControlFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceSubgroupSizeControlPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceSubgroupSizeControlPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_REQUIRED_SUBGROUP_SIZE_CREATE_INFO_EXT:
     os << *reinterpret_cast<
-        const VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT *>(
-        pStruct);
+      const VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINE_RASTERIZATION_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceLineRasterizationFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceLineRasterizationFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINE_RASTERIZATION_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceLineRasterizationPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceLineRasterizationPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_LINE_STATE_CREATE_INFO_EXT:
     os << *reinterpret_cast<
-        const VkPipelineRasterizationLineStateCreateInfoEXT *>(pStruct);
+      const VkPipelineRasterizationLineStateCreateInfoEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_CREATION_CACHE_CONTROL_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDevicePipelineCreationCacheControlFeaturesEXT *>(
-        pStruct);
+      const VkPhysicalDevicePipelineCreationCacheControlFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_COMPILER_CONTROL_CREATE_INFO_AMD:
     os << *reinterpret_cast<const VkPipelineCompilerControlCreateInfoAMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COHERENT_MEMORY_FEATURES_AMD:
     os << *reinterpret_cast<const VkPhysicalDeviceCoherentMemoryFeaturesAMD *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TOOL_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceToolPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_SAMPLER_CUSTOM_BORDER_COLOR_CREATE_INFO_EXT:
     os << *reinterpret_cast<const VkSamplerCustomBorderColorCreateInfoEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUSTOM_BORDER_COLOR_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceCustomBorderColorPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceCustomBorderColorPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUSTOM_BORDER_COLOR_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceCustomBorderColorFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceCustomBorderColorFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR:
     os << *reinterpret_cast<
-        const VkAccelerationStructureGeometryTrianglesDataKHR *>(pStruct);
+      const VkAccelerationStructureGeometryTrianglesDataKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR:
-    os << *reinterpret_cast<
-        const VkAccelerationStructureGeometryAabbsDataKHR *>(pStruct);
+    os
+      << *reinterpret_cast<const VkAccelerationStructureGeometryAabbsDataKHR *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR:
     os << *reinterpret_cast<
-        const VkAccelerationStructureGeometryInstancesDataKHR *>(pStruct);
+      const VkAccelerationStructureGeometryInstancesDataKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_KHR:
     os << *reinterpret_cast<const VkAccelerationStructureGeometryKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_BUILD_GEOMETRY_INFO_KHR:
-    os << *reinterpret_cast<
-        const VkAccelerationStructureBuildGeometryInfoKHR *>(pStruct);
+    os
+      << *reinterpret_cast<const VkAccelerationStructureBuildGeometryInfoKHR *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkAccelerationStructureCreateInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_DEVICE_ADDRESS_INFO_KHR:
-    os << *reinterpret_cast<
-        const VkAccelerationStructureDeviceAddressInfoKHR *>(pStruct);
+    os
+      << *reinterpret_cast<const VkAccelerationStructureDeviceAddressInfoKHR *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_VERSION_INFO_KHR:
     os << *reinterpret_cast<const VkAccelerationStructureVersionInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_COPY_ACCELERATION_STRUCTURE_INFO_KHR:
     os << *reinterpret_cast<const VkCopyAccelerationStructureInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_COPY_ACCELERATION_STRUCTURE_TO_MEMORY_INFO_KHR:
     os << *reinterpret_cast<const VkCopyAccelerationStructureToMemoryInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_COPY_MEMORY_TO_ACCELERATION_STRUCTURE_INFO_KHR:
     os << *reinterpret_cast<const VkCopyMemoryToAccelerationStructureInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_RAY_TRACING_PIPELINE_INTERFACE_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkRayTracingPipelineInterfaceCreateInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_LIBRARY_CREATE_INFO_KHR:
     os << *reinterpret_cast<const VkPipelineLibraryCreateInfoKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceExtendedDynamicStateFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceExtendedDynamicStateFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_2_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceExtendedDynamicState2FeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceExtendedDynamicState2FeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ZERO_INITIALIZE_WORKGROUP_MEMORY_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR *>(
-        pStruct);
+      const VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR *>(
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SUBGROUP_UNIFORM_CONTROL_FLOW_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR *>(
-        pStruct);
+      const VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR *>(
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ROBUSTNESS_2_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceRobustness2FeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ROBUSTNESS_2_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceRobustness2PropertiesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_ROBUSTNESS_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceImageRobustnessFeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_WORKGROUP_MEMORY_EXPLICIT_LAYOUT_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR *>(
-        pStruct);
+      const VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR *>(
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_4444_FORMATS_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDevice4444FormatsFeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_BUFFER_COPY_2_KHR:
     os << *reinterpret_cast<const VkBufferCopy2KHR *>(pStruct);
@@ -28131,51 +28092,52 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_IMAGE_ATOMIC_INT64_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_FRAGMENT_SHADING_RATE_ATTACHMENT_INFO_KHR:
     os << *reinterpret_cast<const VkFragmentShadingRateAttachmentInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_FRAGMENT_SHADING_RATE_STATE_CREATE_INFO_KHR:
     os << *reinterpret_cast<
-        const VkPipelineFragmentShadingRateStateCreateInfoKHR *>(pStruct);
+      const VkPipelineFragmentShadingRateStateCreateInfoKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceFragmentShadingRateFeaturesKHR *>(pStruct);
+      const VkPhysicalDeviceFragmentShadingRateFeaturesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_PROPERTIES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceFragmentShadingRatePropertiesKHR *>(pStruct);
+      const VkPhysicalDeviceFragmentShadingRatePropertiesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_KHR:
     os << *reinterpret_cast<const VkPhysicalDeviceFragmentShadingRateKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_TERMINATE_INVOCATION_FEATURES_KHR:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR *>(pStruct);
+      const VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_BUILD_SIZES_INFO_KHR:
     os << *reinterpret_cast<const VkAccelerationStructureBuildSizesInfoKHR *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_INPUT_DYNAMIC_STATE_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_VERTEX_INPUT_BINDING_DESCRIPTION_2_EXT:
     os << *reinterpret_cast<const VkVertexInputBindingDescription2EXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_VERTEX_INPUT_ATTRIBUTE_DESCRIPTION_2_EXT:
     os << *reinterpret_cast<const VkVertexInputAttributeDescription2EXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COLOR_WRITE_ENABLE_FEATURES_EXT:
-    os << *reinterpret_cast<
-        const VkPhysicalDeviceColorWriteEnableFeaturesEXT *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPhysicalDeviceColorWriteEnableFeaturesEXT *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_COLOR_WRITE_CREATE_INFO_EXT:
     os << *reinterpret_cast<const VkPipelineColorWriteCreateInfoEXT *>(pStruct);
@@ -28203,31 +28165,32 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_QUEUE_FAMILY_CHECKPOINT_PROPERTIES_2_NV:
     os << *reinterpret_cast<const VkQueueFamilyCheckpointProperties2NV *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_CHECKPOINT_DATA_2_NV:
     os << *reinterpret_cast<const VkCheckpointData2NV *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SYNCHRONIZATION_2_FEATURES_KHR:
-    os << *reinterpret_cast<
-        const VkPhysicalDeviceSynchronization2FeaturesKHR *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPhysicalDeviceSynchronization2FeaturesKHR *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_YCBCR_2_PLANE_444_FORMATS_FEATURES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT *>(pStruct);
+      const VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROVOKING_VERTEX_FEATURES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceProvokingVertexFeaturesEXT *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROVOKING_VERTEX_PROPERTIES_EXT:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceProvokingVertexPropertiesEXT *>(pStruct);
+      const VkPhysicalDeviceProvokingVertexPropertiesEXT *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_PROVOKING_VERTEX_STATE_CREATE_INFO_EXT:
     os << *reinterpret_cast<
-        const VkPipelineRasterizationProvokingVertexStateCreateInfoEXT *>(
-        pStruct);
+      const VkPipelineRasterizationProvokingVertexStateCreateInfoEXT *>(
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRM_PROPERTIES_EXT:
     os << *reinterpret_cast<const VkPhysicalDeviceDrmPropertiesEXT *>(pStruct);
@@ -28304,37 +28267,37 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineVertexInputStateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineInputAssemblyStateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineTessellationStateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineViewportStateCreateInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineRasterizationStateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineMultisampleStateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineColorBlendStateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_DYNAMIC_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineDynamicStateCreateInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO:
     os << *reinterpret_cast<const VkPipelineDepthStencilStateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO:
     os << *reinterpret_cast<const VkGraphicsPipelineCreateInfo *>(pStruct);
@@ -28410,25 +28373,25 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2:
     os << *reinterpret_cast<const VkPhysicalDeviceSparseImageFormatInfo2 *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRIVER_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceDriverProperties *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceVariablePointersFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO:
     os << *reinterpret_cast<const VkPhysicalDeviceExternalImageFormatInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES:
     os << *reinterpret_cast<const VkExternalImageFormatProperties *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO:
     os << *reinterpret_cast<const VkPhysicalDeviceExternalBufferInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES:
     os << *reinterpret_cast<const VkExternalBufferProperties *>(pStruct);
@@ -28447,7 +28410,7 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO:
     os << *reinterpret_cast<const VkPhysicalDeviceExternalSemaphoreInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES:
     os << *reinterpret_cast<const VkExternalSemaphoreProperties *>(pStruct);
@@ -28469,7 +28432,7 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceMultiviewProperties *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO:
     os << *reinterpret_cast<const VkRenderPassMultiviewCreateInfo *>(pStruct);
@@ -28497,7 +28460,7 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO:
     os << *reinterpret_cast<const VkDeviceGroupCommandBufferBeginInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO:
     os << *reinterpret_cast<const VkDeviceGroupSubmitInfo *>(pStruct);
@@ -28510,23 +28473,24 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO:
     os << *reinterpret_cast<const VkDescriptorUpdateTemplateCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO:
-    os << *reinterpret_cast<
-        const VkRenderPassInputAttachmentAspectCreateInfo *>(pStruct);
+    os
+      << *reinterpret_cast<const VkRenderPassInputAttachmentAspectCreateInfo *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDevice16BitStorageFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceSubgroupProperties *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SUBGROUP_EXTENDED_TYPES_FEATURES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures *>(pStruct);
+      const VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2:
     os << *reinterpret_cast<const VkBufferMemoryRequirementsInfo2 *>(pStruct);
@@ -28536,7 +28500,7 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2:
     os << *reinterpret_cast<const VkImageSparseMemoryRequirementsInfo2 *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2:
     os << *reinterpret_cast<const VkMemoryRequirements2 *>(pStruct);
@@ -28546,7 +28510,7 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDevicePointClippingProperties *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS:
     os << *reinterpret_cast<const VkMemoryDedicatedRequirements *>(pStruct);
@@ -28559,47 +28523,47 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO:
     os << *reinterpret_cast<
-        const VkPipelineTessellationDomainOriginStateCreateInfo *>(pStruct);
+      const VkPipelineTessellationDomainOriginStateCreateInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO:
     os << *reinterpret_cast<const VkSamplerYcbcrConversionInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO:
     os << *reinterpret_cast<const VkSamplerYcbcrConversionCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO:
     os << *reinterpret_cast<const VkBindImagePlaneMemoryInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO:
     os << *reinterpret_cast<const VkImagePlaneMemoryRequirementsInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceSamplerYcbcrConversionFeatures *>(pStruct);
+      const VkPhysicalDeviceSamplerYcbcrConversionFeatures *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES:
     os << *reinterpret_cast<
-        const VkSamplerYcbcrConversionImageFormatProperties *>(pStruct);
+      const VkSamplerYcbcrConversionImageFormatProperties *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PROTECTED_SUBMIT_INFO:
     os << *reinterpret_cast<const VkProtectedSubmitInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceProtectedMemoryFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceProtectedMemoryProperties *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEVICE_QUEUE_INFO_2:
     os << *reinterpret_cast<const VkDeviceQueueInfo2 *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_FILTER_MINMAX_PROPERTIES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceSamplerFilterMinmaxProperties *>(pStruct);
+      const VkPhysicalDeviceSamplerFilterMinmaxProperties *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO:
     os << *reinterpret_cast<const VkSamplerReductionModeCreateInfo *>(pStruct);
@@ -28609,46 +28573,47 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceMaintenance3Properties *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT:
     os << *reinterpret_cast<const VkDescriptorSetLayoutSupport *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETERS_FEATURES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceShaderDrawParametersFeatures *>(pStruct);
+      const VkPhysicalDeviceShaderDrawParametersFeatures *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceShaderFloat16Int8Features *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT_CONTROLS_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceFloatControlsProperties *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_HOST_QUERY_RESET_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceHostQueryResetFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceDescriptorIndexingFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceDescriptorIndexingProperties *>(pStruct);
+      const VkPhysicalDeviceDescriptorIndexingProperties *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_BINDING_FLAGS_CREATE_INFO:
-    os << *reinterpret_cast<
-        const VkDescriptorSetLayoutBindingFlagsCreateInfo *>(pStruct);
+    os
+      << *reinterpret_cast<const VkDescriptorSetLayoutBindingFlagsCreateInfo *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_ALLOCATE_INFO:
     os << *reinterpret_cast<
-        const VkDescriptorSetVariableDescriptorCountAllocateInfo *>(pStruct);
+      const VkDescriptorSetVariableDescriptorCountAllocateInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_LAYOUT_SUPPORT:
     os << *reinterpret_cast<
-        const VkDescriptorSetVariableDescriptorCountLayoutSupport *>(pStruct);
+      const VkDescriptorSetVariableDescriptorCountLayoutSupport *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_2:
     os << *reinterpret_cast<const VkAttachmentDescription2 *>(pStruct);
@@ -28673,11 +28638,12 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceTimelineSemaphoreFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_PROPERTIES:
-    os << *reinterpret_cast<
-        const VkPhysicalDeviceTimelineSemaphoreProperties *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPhysicalDeviceTimelineSemaphoreProperties *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO:
     os << *reinterpret_cast<const VkSemaphoreTypeCreateInfo *>(pStruct);
@@ -28693,53 +28659,54 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_8BIT_STORAGE_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDevice8BitStorageFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_MEMORY_MODEL_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceVulkanMemoryModelFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_INT64_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceShaderAtomicInt64Features *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceDepthStencilResolveProperties *>(pStruct);
+      const VkPhysicalDeviceDepthStencilResolveProperties *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_DEPTH_STENCIL_RESOLVE:
     os << *reinterpret_cast<const VkSubpassDescriptionDepthStencilResolve *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_IMAGE_STENCIL_USAGE_CREATE_INFO:
     os << *reinterpret_cast<const VkImageStencilUsageCreateInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCALAR_BLOCK_LAYOUT_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceScalarBlockLayoutFeatures *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_UNIFORM_BUFFER_STANDARD_LAYOUT_FEATURES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceUniformBufferStandardLayoutFeatures *>(pStruct);
+      const VkPhysicalDeviceUniformBufferStandardLayoutFeatures *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES:
-    os << *reinterpret_cast<
-        const VkPhysicalDeviceBufferDeviceAddressFeatures *>(pStruct);
+    os
+      << *reinterpret_cast<const VkPhysicalDeviceBufferDeviceAddressFeatures *>(
+           pStruct);
     break;
   case VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_INFO:
     os << *reinterpret_cast<const VkBufferDeviceAddressInfo *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_BUFFER_OPAQUE_CAPTURE_ADDRESS_CREATE_INFO:
     os << *reinterpret_cast<const VkBufferOpaqueCaptureAddressCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGELESS_FRAMEBUFFER_FEATURES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceImagelessFramebufferFeatures *>(pStruct);
+      const VkPhysicalDeviceImagelessFramebufferFeatures *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENTS_CREATE_INFO:
     os << *reinterpret_cast<const VkFramebufferAttachmentsCreateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_FRAMEBUFFER_ATTACHMENT_IMAGE_INFO:
     os << *reinterpret_cast<const VkFramebufferAttachmentImageInfo *>(pStruct);
@@ -28749,43 +28716,43 @@ std::ostream &PrintVkStruct(std::ostream &os, const VkStruct *pStruct) {
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SEPARATE_DEPTH_STENCIL_LAYOUTS_FEATURES:
     os << *reinterpret_cast<
-        const VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures *>(pStruct);
+      const VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_STENCIL_LAYOUT:
     os << *reinterpret_cast<const VkAttachmentReferenceStencilLayout *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_STENCIL_LAYOUT:
     os << *reinterpret_cast<const VkAttachmentDescriptionStencilLayout *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_MEMORY_OPAQUE_CAPTURE_ADDRESS_ALLOCATE_INFO:
     os << *reinterpret_cast<const VkMemoryOpaqueCaptureAddressAllocateInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_DEVICE_MEMORY_OPAQUE_CAPTURE_ADDRESS_INFO:
     os << *reinterpret_cast<const VkDeviceMemoryOpaqueCaptureAddressInfo *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_1_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceVulkan11Features *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_1_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceVulkan11Properties *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_2_FEATURES:
     os << *reinterpret_cast<const VkPhysicalDeviceVulkan12Features *>(pStruct);
     break;
   case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_2_PROPERTIES:
     os << *reinterpret_cast<const VkPhysicalDeviceVulkan12Properties *>(
-        pStruct);
+      pStruct);
     break;
 
 #ifdef VK_USE_PLATFORM_GGP
   case VK_STRUCTURE_TYPE_STREAM_DESCRIPTOR_SURFACE_CREATE_INFO_GGP:
     os << *reinterpret_cast<const VkStreamDescriptorSurfaceCreateInfoGGP *>(
-        pStruct);
+      pStruct);
     break;
   case VK_STRUCTURE_TYPE_PRESENT_FRAME_TOKEN_GGP:
     os << *reinterpret_cast<const VkPresentFrameTokenGGP *>(pStruct);
@@ -28867,7 +28834,7 @@ void CommandPrinter::PrintCmdDrawMultiEXTArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdDrawMultiIndexedEXTArgs(
-    std::ostream &os, const CmdDrawMultiIndexedEXTArgs &args) {
+  std::ostream &os, const CmdDrawMultiIndexedEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -28945,7 +28912,7 @@ void CommandPrinter::PrintCmdDrawMultiIndexedEXTArgs(
 }
 
 void CommandPrinter::PrintCmdDebugMarkerBeginEXTArgs(
-    std::ostream &os, const CmdDebugMarkerBeginEXTArgs &args) {
+  std::ostream &os, const CmdDebugMarkerBeginEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -28969,7 +28936,7 @@ void CommandPrinter::PrintCmdDebugMarkerBeginEXTArgs(
 }
 
 void CommandPrinter::PrintCmdDebugMarkerEndEXTArgs(
-    std::ostream &os, const CmdDebugMarkerEndEXTArgs &args) {
+  std::ostream &os, const CmdDebugMarkerEndEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -28980,7 +28947,7 @@ void CommandPrinter::PrintCmdDebugMarkerEndEXTArgs(
 }
 
 void CommandPrinter::PrintCmdDebugMarkerInsertEXTArgs(
-    std::ostream &os, const CmdDebugMarkerInsertEXTArgs &args) {
+  std::ostream &os, const CmdDebugMarkerInsertEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29004,7 +28971,7 @@ void CommandPrinter::PrintCmdDebugMarkerInsertEXTArgs(
 }
 
 void CommandPrinter::PrintCmdPushDescriptorSetKHRArgs(
-    std::ostream &os, const CmdPushDescriptorSetKHRArgs &args) {
+  std::ostream &os, const CmdPushDescriptorSetKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29070,7 +29037,7 @@ void CommandPrinter::PrintCmdPushDescriptorSetKHRArgs(
 }
 
 void CommandPrinter::PrintCmdSetDeviceMaskArgs(
-    std::ostream &os, const CmdSetDeviceMaskArgs &args) {
+  std::ostream &os, const CmdSetDeviceMaskArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29089,7 +29056,7 @@ void CommandPrinter::PrintCmdSetDeviceMaskArgs(
 }
 
 void CommandPrinter::PrintCmdSetDeviceMaskKHRArgs(
-    std::ostream &os, const CmdSetDeviceMaskKHRArgs &args) {
+  std::ostream &os, const CmdSetDeviceMaskKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29167,7 +29134,7 @@ void CommandPrinter::PrintCmdDispatchBaseArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdDispatchBaseKHRArgs(
-    std::ostream &os, const CmdDispatchBaseKHRArgs &args) {
+  std::ostream &os, const CmdDispatchBaseKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29226,7 +29193,7 @@ void CommandPrinter::PrintCmdDispatchBaseKHRArgs(
 }
 
 void CommandPrinter::PrintCmdPushDescriptorSetWithTemplateKHRArgs(
-    std::ostream &os, const CmdPushDescriptorSetWithTemplateKHRArgs &args) {
+  std::ostream &os, const CmdPushDescriptorSetWithTemplateKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29271,7 +29238,7 @@ void CommandPrinter::PrintCmdPushDescriptorSetWithTemplateKHRArgs(
 }
 
 void CommandPrinter::PrintCmdSetSampleLocationsEXTArgs(
-    std::ostream &os, const CmdSetSampleLocationsEXTArgs &args) {
+  std::ostream &os, const CmdSetSampleLocationsEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29295,7 +29262,7 @@ void CommandPrinter::PrintCmdSetSampleLocationsEXTArgs(
 }
 
 void CommandPrinter::PrintCmdBeginDebugUtilsLabelEXTArgs(
-    std::ostream &os, const CmdBeginDebugUtilsLabelEXTArgs &args) {
+  std::ostream &os, const CmdBeginDebugUtilsLabelEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29319,7 +29286,7 @@ void CommandPrinter::PrintCmdBeginDebugUtilsLabelEXTArgs(
 }
 
 void CommandPrinter::PrintCmdEndDebugUtilsLabelEXTArgs(
-    std::ostream &os, const CmdEndDebugUtilsLabelEXTArgs &args) {
+  std::ostream &os, const CmdEndDebugUtilsLabelEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29330,7 +29297,7 @@ void CommandPrinter::PrintCmdEndDebugUtilsLabelEXTArgs(
 }
 
 void CommandPrinter::PrintCmdInsertDebugUtilsLabelEXTArgs(
-    std::ostream &os, const CmdInsertDebugUtilsLabelEXTArgs &args) {
+  std::ostream &os, const CmdInsertDebugUtilsLabelEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29354,7 +29321,7 @@ void CommandPrinter::PrintCmdInsertDebugUtilsLabelEXTArgs(
 }
 
 void CommandPrinter::PrintCmdWriteBufferMarkerAMDArgs(
-    std::ostream &os, const CmdWriteBufferMarkerAMDArgs &args) {
+  std::ostream &os, const CmdWriteBufferMarkerAMDArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29397,7 +29364,7 @@ void CommandPrinter::PrintCmdWriteBufferMarkerAMDArgs(
 }
 
 void CommandPrinter::PrintCmdBeginRenderPass2Args(
-    std::ostream &os, const CmdBeginRenderPass2Args &args) {
+  std::ostream &os, const CmdBeginRenderPass2Args &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29434,7 +29401,7 @@ void CommandPrinter::PrintCmdBeginRenderPass2Args(
 }
 
 void CommandPrinter::PrintCmdBeginRenderPass2KHRArgs(
-    std::ostream &os, const CmdBeginRenderPass2KHRArgs &args) {
+  std::ostream &os, const CmdBeginRenderPass2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29508,7 +29475,7 @@ void CommandPrinter::PrintCmdNextSubpass2Args(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdNextSubpass2KHRArgs(
-    std::ostream &os, const CmdNextSubpass2KHRArgs &args) {
+  std::ostream &os, const CmdNextSubpass2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29545,7 +29512,7 @@ void CommandPrinter::PrintCmdNextSubpass2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdEndRenderPass2Args(
-    std::ostream &os, const CmdEndRenderPass2Args &args) {
+  std::ostream &os, const CmdEndRenderPass2Args &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29569,7 +29536,7 @@ void CommandPrinter::PrintCmdEndRenderPass2Args(
 }
 
 void CommandPrinter::PrintCmdEndRenderPass2KHRArgs(
-    std::ostream &os, const CmdEndRenderPass2KHRArgs &args) {
+  std::ostream &os, const CmdEndRenderPass2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29593,7 +29560,7 @@ void CommandPrinter::PrintCmdEndRenderPass2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdDrawIndirectCountArgs(
-    std::ostream &os, const CmdDrawIndirectCountArgs &args) {
+  std::ostream &os, const CmdDrawIndirectCountArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29652,7 +29619,7 @@ void CommandPrinter::PrintCmdDrawIndirectCountArgs(
 }
 
 void CommandPrinter::PrintCmdDrawIndirectCountKHRArgs(
-    std::ostream &os, const CmdDrawIndirectCountKHRArgs &args) {
+  std::ostream &os, const CmdDrawIndirectCountKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29711,7 +29678,7 @@ void CommandPrinter::PrintCmdDrawIndirectCountKHRArgs(
 }
 
 void CommandPrinter::PrintCmdDrawIndirectCountAMDArgs(
-    std::ostream &os, const CmdDrawIndirectCountAMDArgs &args) {
+  std::ostream &os, const CmdDrawIndirectCountAMDArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29770,7 +29737,7 @@ void CommandPrinter::PrintCmdDrawIndirectCountAMDArgs(
 }
 
 void CommandPrinter::PrintCmdDrawIndexedIndirectCountArgs(
-    std::ostream &os, const CmdDrawIndexedIndirectCountArgs &args) {
+  std::ostream &os, const CmdDrawIndexedIndirectCountArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29829,7 +29796,7 @@ void CommandPrinter::PrintCmdDrawIndexedIndirectCountArgs(
 }
 
 void CommandPrinter::PrintCmdDrawIndexedIndirectCountKHRArgs(
-    std::ostream &os, const CmdDrawIndexedIndirectCountKHRArgs &args) {
+  std::ostream &os, const CmdDrawIndexedIndirectCountKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29888,7 +29855,7 @@ void CommandPrinter::PrintCmdDrawIndexedIndirectCountKHRArgs(
 }
 
 void CommandPrinter::PrintCmdDrawIndexedIndirectCountAMDArgs(
-    std::ostream &os, const CmdDrawIndexedIndirectCountAMDArgs &args) {
+  std::ostream &os, const CmdDrawIndexedIndirectCountAMDArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29947,7 +29914,7 @@ void CommandPrinter::PrintCmdDrawIndexedIndirectCountAMDArgs(
 }
 
 void CommandPrinter::PrintCmdCopyAccelerationStructureKHRArgs(
-    std::ostream &os, const CmdCopyAccelerationStructureKHRArgs &args) {
+  std::ostream &os, const CmdCopyAccelerationStructureKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29971,7 +29938,7 @@ void CommandPrinter::PrintCmdCopyAccelerationStructureKHRArgs(
 }
 
 void CommandPrinter::PrintCmdCopyAccelerationStructureToMemoryKHRArgs(
-    std::ostream &os, const CmdCopyAccelerationStructureToMemoryKHRArgs &args) {
+  std::ostream &os, const CmdCopyAccelerationStructureToMemoryKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -29995,7 +29962,7 @@ void CommandPrinter::PrintCmdCopyAccelerationStructureToMemoryKHRArgs(
 }
 
 void CommandPrinter::PrintCmdCopyMemoryToAccelerationStructureKHRArgs(
-    std::ostream &os, const CmdCopyMemoryToAccelerationStructureKHRArgs &args) {
+  std::ostream &os, const CmdCopyMemoryToAccelerationStructureKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30019,8 +29986,8 @@ void CommandPrinter::PrintCmdCopyMemoryToAccelerationStructureKHRArgs(
 }
 
 void CommandPrinter::PrintCmdWriteAccelerationStructuresPropertiesKHRArgs(
-    std::ostream &os,
-    const CmdWriteAccelerationStructuresPropertiesKHRArgs &args) {
+  std::ostream &os,
+  const CmdWriteAccelerationStructuresPropertiesKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30178,7 +30145,7 @@ void CommandPrinter::PrintCmdTraceRaysKHRArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdTraceRaysIndirectKHRArgs(
-    std::ostream &os, const CmdTraceRaysIndirectKHRArgs &args) {
+  std::ostream &os, const CmdTraceRaysIndirectKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30253,7 +30220,7 @@ void CommandPrinter::PrintCmdTraceRaysIndirectKHRArgs(
 }
 
 void CommandPrinter::PrintCmdSetRayTracingPipelineStackSizeKHRArgs(
-    std::ostream &os, const CmdSetRayTracingPipelineStackSizeKHRArgs &args) {
+  std::ostream &os, const CmdSetRayTracingPipelineStackSizeKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30272,7 +30239,7 @@ void CommandPrinter::PrintCmdSetRayTracingPipelineStackSizeKHRArgs(
 }
 
 void CommandPrinter::PrintCmdSetLineStippleEXTArgs(
-    std::ostream &os, const CmdSetLineStippleEXTArgs &args) {
+  std::ostream &os, const CmdSetLineStippleEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30299,7 +30266,7 @@ void CommandPrinter::PrintCmdSetLineStippleEXTArgs(
 }
 
 void CommandPrinter::PrintCmdBuildAccelerationStructuresKHRArgs(
-    std::ostream &os, const CmdBuildAccelerationStructuresKHRArgs &args) {
+  std::ostream &os, const CmdBuildAccelerationStructuresKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30365,8 +30332,7 @@ void CommandPrinter::PrintCmdBuildAccelerationStructuresKHRArgs(
 }
 
 void CommandPrinter::PrintCmdBuildAccelerationStructuresIndirectKHRArgs(
-    std::ostream &os,
-    const CmdBuildAccelerationStructuresIndirectKHRArgs &args) {
+  std::ostream &os, const CmdBuildAccelerationStructuresIndirectKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30475,7 +30441,7 @@ void CommandPrinter::PrintCmdBuildAccelerationStructuresIndirectKHRArgs(
 }
 
 void CommandPrinter::PrintCmdSetCullModeEXTArgs(
-    std::ostream &os, const CmdSetCullModeEXTArgs &args) {
+  std::ostream &os, const CmdSetCullModeEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30494,7 +30460,7 @@ void CommandPrinter::PrintCmdSetCullModeEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetFrontFaceEXTArgs(
-    std::ostream &os, const CmdSetFrontFaceEXTArgs &args) {
+  std::ostream &os, const CmdSetFrontFaceEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30513,7 +30479,7 @@ void CommandPrinter::PrintCmdSetFrontFaceEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetPrimitiveTopologyEXTArgs(
-    std::ostream &os, const CmdSetPrimitiveTopologyEXTArgs &args) {
+  std::ostream &os, const CmdSetPrimitiveTopologyEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30532,7 +30498,7 @@ void CommandPrinter::PrintCmdSetPrimitiveTopologyEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetViewportWithCountEXTArgs(
-    std::ostream &os, const CmdSetViewportWithCountEXTArgs &args) {
+  std::ostream &os, const CmdSetViewportWithCountEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30573,7 +30539,7 @@ void CommandPrinter::PrintCmdSetViewportWithCountEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetScissorWithCountEXTArgs(
-    std::ostream &os, const CmdSetScissorWithCountEXTArgs &args) {
+  std::ostream &os, const CmdSetScissorWithCountEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30614,7 +30580,7 @@ void CommandPrinter::PrintCmdSetScissorWithCountEXTArgs(
 }
 
 void CommandPrinter::PrintCmdBindVertexBuffers2EXTArgs(
-    std::ostream &os, const CmdBindVertexBuffers2EXTArgs &args) {
+  std::ostream &os, const CmdBindVertexBuffers2EXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30729,7 +30695,7 @@ void CommandPrinter::PrintCmdBindVertexBuffers2EXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetDepthTestEnableEXTArgs(
-    std::ostream &os, const CmdSetDepthTestEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetDepthTestEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30748,7 +30714,7 @@ void CommandPrinter::PrintCmdSetDepthTestEnableEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetDepthWriteEnableEXTArgs(
-    std::ostream &os, const CmdSetDepthWriteEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetDepthWriteEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30767,7 +30733,7 @@ void CommandPrinter::PrintCmdSetDepthWriteEnableEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetDepthCompareOpEXTArgs(
-    std::ostream &os, const CmdSetDepthCompareOpEXTArgs &args) {
+  std::ostream &os, const CmdSetDepthCompareOpEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30786,7 +30752,7 @@ void CommandPrinter::PrintCmdSetDepthCompareOpEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetDepthBoundsTestEnableEXTArgs(
-    std::ostream &os, const CmdSetDepthBoundsTestEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetDepthBoundsTestEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30805,7 +30771,7 @@ void CommandPrinter::PrintCmdSetDepthBoundsTestEnableEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetStencilTestEnableEXTArgs(
-    std::ostream &os, const CmdSetStencilTestEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetStencilTestEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30824,7 +30790,7 @@ void CommandPrinter::PrintCmdSetStencilTestEnableEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetStencilOpEXTArgs(
-    std::ostream &os, const CmdSetStencilOpEXTArgs &args) {
+  std::ostream &os, const CmdSetStencilOpEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30875,7 +30841,7 @@ void CommandPrinter::PrintCmdSetStencilOpEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetPatchControlPointsEXTArgs(
-    std::ostream &os, const CmdSetPatchControlPointsEXTArgs &args) {
+  std::ostream &os, const CmdSetPatchControlPointsEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30894,7 +30860,7 @@ void CommandPrinter::PrintCmdSetPatchControlPointsEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetRasterizerDiscardEnableEXTArgs(
-    std::ostream &os, const CmdSetRasterizerDiscardEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetRasterizerDiscardEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30913,7 +30879,7 @@ void CommandPrinter::PrintCmdSetRasterizerDiscardEnableEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetDepthBiasEnableEXTArgs(
-    std::ostream &os, const CmdSetDepthBiasEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetDepthBiasEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30932,7 +30898,7 @@ void CommandPrinter::PrintCmdSetDepthBiasEnableEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetLogicOpEXTArgs(
-    std::ostream &os, const CmdSetLogicOpEXTArgs &args) {
+  std::ostream &os, const CmdSetLogicOpEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30951,7 +30917,7 @@ void CommandPrinter::PrintCmdSetLogicOpEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetPrimitiveRestartEnableEXTArgs(
-    std::ostream &os, const CmdSetPrimitiveRestartEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetPrimitiveRestartEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30970,7 +30936,7 @@ void CommandPrinter::PrintCmdSetPrimitiveRestartEnableEXTArgs(
 }
 
 void CommandPrinter::PrintCmdCopyBuffer2KHRArgs(
-    std::ostream &os, const CmdCopyBuffer2KHRArgs &args) {
+  std::ostream &os, const CmdCopyBuffer2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -30994,7 +30960,7 @@ void CommandPrinter::PrintCmdCopyBuffer2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdCopyImage2KHRArgs(
-    std::ostream &os, const CmdCopyImage2KHRArgs &args) {
+  std::ostream &os, const CmdCopyImage2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31018,7 +30984,7 @@ void CommandPrinter::PrintCmdCopyImage2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdBlitImage2KHRArgs(
-    std::ostream &os, const CmdBlitImage2KHRArgs &args) {
+  std::ostream &os, const CmdBlitImage2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31042,7 +31008,7 @@ void CommandPrinter::PrintCmdBlitImage2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdCopyBufferToImage2KHRArgs(
-    std::ostream &os, const CmdCopyBufferToImage2KHRArgs &args) {
+  std::ostream &os, const CmdCopyBufferToImage2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31067,7 +31033,7 @@ void CommandPrinter::PrintCmdCopyBufferToImage2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdCopyImageToBuffer2KHRArgs(
-    std::ostream &os, const CmdCopyImageToBuffer2KHRArgs &args) {
+  std::ostream &os, const CmdCopyImageToBuffer2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31092,7 +31058,7 @@ void CommandPrinter::PrintCmdCopyImageToBuffer2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdResolveImage2KHRArgs(
-    std::ostream &os, const CmdResolveImage2KHRArgs &args) {
+  std::ostream &os, const CmdResolveImage2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31116,7 +31082,7 @@ void CommandPrinter::PrintCmdResolveImage2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdSetFragmentShadingRateKHRArgs(
-    std::ostream &os, const CmdSetFragmentShadingRateKHRArgs &args) {
+  std::ostream &os, const CmdSetFragmentShadingRateKHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31163,7 +31129,7 @@ void CommandPrinter::PrintCmdSetFragmentShadingRateKHRArgs(
 }
 
 void CommandPrinter::PrintCmdSetVertexInputEXTArgs(
-    std::ostream &os, const CmdSetVertexInputEXTArgs &args) {
+  std::ostream &os, const CmdSetVertexInputEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31238,7 +31204,7 @@ void CommandPrinter::PrintCmdSetVertexInputEXTArgs(
 }
 
 void CommandPrinter::PrintCmdSetColorWriteEnableEXTArgs(
-    std::ostream &os, const CmdSetColorWriteEnableEXTArgs &args) {
+  std::ostream &os, const CmdSetColorWriteEnableEXTArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31311,7 +31277,7 @@ void CommandPrinter::PrintCmdSetEvent2KHRArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdResetEvent2KHRArgs(
-    std::ostream &os, const CmdResetEvent2KHRArgs &args) {
+  std::ostream &os, const CmdResetEvent2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31338,7 +31304,7 @@ void CommandPrinter::PrintCmdResetEvent2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdWaitEvents2KHRArgs(
-    std::ostream &os, const CmdWaitEvents2KHRArgs &args) {
+  std::ostream &os, const CmdWaitEvents2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31402,7 +31368,7 @@ void CommandPrinter::PrintCmdWaitEvents2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdPipelineBarrier2KHRArgs(
-    std::ostream &os, const CmdPipelineBarrier2KHRArgs &args) {
+  std::ostream &os, const CmdPipelineBarrier2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31426,7 +31392,7 @@ void CommandPrinter::PrintCmdPipelineBarrier2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdWriteTimestamp2KHRArgs(
-    std::ostream &os, const CmdWriteTimestamp2KHRArgs &args) {
+  std::ostream &os, const CmdWriteTimestamp2KHRArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31461,7 +31427,7 @@ void CommandPrinter::PrintCmdWriteTimestamp2KHRArgs(
 }
 
 void CommandPrinter::PrintCmdWriteBufferMarker2AMDArgs(
-    std::ostream &os, const CmdWriteBufferMarker2AMDArgs &args) {
+  std::ostream &os, const CmdWriteBufferMarker2AMDArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31504,7 +31470,7 @@ void CommandPrinter::PrintCmdWriteBufferMarker2AMDArgs(
 }
 
 void CommandPrinter::PrintBeginCommandBufferArgs(
-    std::ostream &os, const BeginCommandBufferArgs &args) {
+  std::ostream &os, const BeginCommandBufferArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31528,7 +31494,7 @@ void CommandPrinter::PrintBeginCommandBufferArgs(
 }
 
 void CommandPrinter::PrintEndCommandBufferArgs(
-    std::ostream &os, const EndCommandBufferArgs &args) {
+  std::ostream &os, const EndCommandBufferArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31539,7 +31505,7 @@ void CommandPrinter::PrintEndCommandBufferArgs(
 }
 
 void CommandPrinter::PrintResetCommandBufferArgs(
-    std::ostream &os, const ResetCommandBufferArgs &args) {
+  std::ostream &os, const ResetCommandBufferArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31737,7 +31703,7 @@ void CommandPrinter::PrintCmdSetDepthBiasArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdSetBlendConstantsArgs(
-    std::ostream &os, const CmdSetBlendConstantsArgs &args) {
+  std::ostream &os, const CmdSetBlendConstantsArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31770,7 +31736,7 @@ void CommandPrinter::PrintCmdSetBlendConstantsArgs(
 }
 
 void CommandPrinter::PrintCmdSetDepthBoundsArgs(
-    std::ostream &os, const CmdSetDepthBoundsArgs &args) {
+  std::ostream &os, const CmdSetDepthBoundsArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31797,7 +31763,7 @@ void CommandPrinter::PrintCmdSetDepthBoundsArgs(
 }
 
 void CommandPrinter::PrintCmdSetStencilCompareMaskArgs(
-    std::ostream &os, const CmdSetStencilCompareMaskArgs &args) {
+  std::ostream &os, const CmdSetStencilCompareMaskArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31824,7 +31790,7 @@ void CommandPrinter::PrintCmdSetStencilCompareMaskArgs(
 }
 
 void CommandPrinter::PrintCmdSetStencilWriteMaskArgs(
-    std::ostream &os, const CmdSetStencilWriteMaskArgs &args) {
+  std::ostream &os, const CmdSetStencilWriteMaskArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31851,7 +31817,7 @@ void CommandPrinter::PrintCmdSetStencilWriteMaskArgs(
 }
 
 void CommandPrinter::PrintCmdSetStencilReferenceArgs(
-    std::ostream &os, const CmdSetStencilReferenceArgs &args) {
+  std::ostream &os, const CmdSetStencilReferenceArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31878,7 +31844,7 @@ void CommandPrinter::PrintCmdSetStencilReferenceArgs(
 }
 
 void CommandPrinter::PrintCmdBindDescriptorSetsArgs(
-    std::ostream &os, const CmdBindDescriptorSetsArgs &args) {
+  std::ostream &os, const CmdBindDescriptorSetsArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -31973,7 +31939,7 @@ void CommandPrinter::PrintCmdBindDescriptorSetsArgs(
 }
 
 void CommandPrinter::PrintCmdBindIndexBufferArgs(
-    std::ostream &os, const CmdBindIndexBufferArgs &args) {
+  std::ostream &os, const CmdBindIndexBufferArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32008,7 +31974,7 @@ void CommandPrinter::PrintCmdBindIndexBufferArgs(
 }
 
 void CommandPrinter::PrintCmdBindVertexBuffersArgs(
-    std::ostream &os, const CmdBindVertexBuffersArgs &args) {
+  std::ostream &os, const CmdBindVertexBuffersArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32216,7 +32182,7 @@ void CommandPrinter::PrintCmdDrawIndirectArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdDrawIndexedIndirectArgs(
-    std::ostream &os, const CmdDrawIndexedIndirectArgs &args) {
+  std::ostream &os, const CmdDrawIndexedIndirectArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32294,7 +32260,7 @@ void CommandPrinter::PrintCmdDispatchArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdDispatchIndirectArgs(
-    std::ostream &os, const CmdDispatchIndirectArgs &args) {
+  std::ostream &os, const CmdDispatchIndirectArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32532,7 +32498,7 @@ void CommandPrinter::PrintCmdBlitImageArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdCopyBufferToImageArgs(
-    std::ostream &os, const CmdCopyBufferToImageArgs &args) {
+  std::ostream &os, const CmdCopyBufferToImageArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32597,7 +32563,7 @@ void CommandPrinter::PrintCmdCopyBufferToImageArgs(
 }
 
 void CommandPrinter::PrintCmdCopyImageToBufferArgs(
-    std::ostream &os, const CmdCopyImageToBufferArgs &args) {
+  std::ostream &os, const CmdCopyImageToBufferArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32763,7 +32729,7 @@ void CommandPrinter::PrintCmdFillBufferArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdClearColorImageArgs(
-    std::ostream &os, const CmdClearColorImageArgs &args) {
+  std::ostream &os, const CmdClearColorImageArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32833,7 +32799,7 @@ void CommandPrinter::PrintCmdClearColorImageArgs(
 }
 
 void CommandPrinter::PrintCmdClearDepthStencilImageArgs(
-    std::ostream &os, const CmdClearDepthStencilImageArgs &args) {
+  std::ostream &os, const CmdClearDepthStencilImageArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -32903,7 +32869,7 @@ void CommandPrinter::PrintCmdClearDepthStencilImageArgs(
 }
 
 void CommandPrinter::PrintCmdClearAttachmentsArgs(
-    std::ostream &os, const CmdClearAttachmentsArgs &args) {
+  std::ostream &os, const CmdClearAttachmentsArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33252,7 +33218,7 @@ void CommandPrinter::PrintCmdWaitEventsArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdPipelineBarrierArgs(
-    std::ostream &os, const CmdPipelineBarrierArgs &args) {
+  std::ostream &os, const CmdPipelineBarrierArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33443,7 +33409,7 @@ void CommandPrinter::PrintCmdEndQueryArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdResetQueryPoolArgs(
-    std::ostream &os, const CmdResetQueryPoolArgs &args) {
+  std::ostream &os, const CmdResetQueryPoolArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33478,7 +33444,7 @@ void CommandPrinter::PrintCmdResetQueryPoolArgs(
 }
 
 void CommandPrinter::PrintCmdWriteTimestampArgs(
-    std::ostream &os, const CmdWriteTimestampArgs &args) {
+  std::ostream &os, const CmdWriteTimestampArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33513,7 +33479,7 @@ void CommandPrinter::PrintCmdWriteTimestampArgs(
 }
 
 void CommandPrinter::PrintCmdCopyQueryPoolResultsArgs(
-    std::ostream &os, const CmdCopyQueryPoolResultsArgs &args) {
+  std::ostream &os, const CmdCopyQueryPoolResultsArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33580,7 +33546,7 @@ void CommandPrinter::PrintCmdCopyQueryPoolResultsArgs(
 }
 
 void CommandPrinter::PrintCmdPushConstantsArgs(
-    std::ostream &os, const CmdPushConstantsArgs &args) {
+  std::ostream &os, const CmdPushConstantsArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33646,7 +33612,7 @@ void CommandPrinter::PrintCmdPushConstantsArgs(
 }
 
 void CommandPrinter::PrintCmdBeginRenderPassArgs(
-    std::ostream &os, const CmdBeginRenderPassArgs &args) {
+  std::ostream &os, const CmdBeginRenderPassArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33697,7 +33663,7 @@ void CommandPrinter::PrintCmdNextSubpassArgs(std::ostream &os,
 }
 
 void CommandPrinter::PrintCmdEndRenderPassArgs(
-    std::ostream &os, const CmdEndRenderPassArgs &args) {
+  std::ostream &os, const CmdEndRenderPassArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);
@@ -33708,7 +33674,7 @@ void CommandPrinter::PrintCmdEndRenderPassArgs(
 }
 
 void CommandPrinter::PrintCmdExecuteCommandsArgs(
-    std::ostream &os, const CmdExecuteCommandsArgs &args) {
+  std::ostream &os, const CmdExecuteCommandsArgs &args) {
   {
     os << "- # parameter:" << std::endl;
     ScopedOstream sop(os);

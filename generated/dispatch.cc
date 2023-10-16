@@ -23,580 +23,578 @@ namespace GFR {
 void InitInstanceDispatchTable(VkInstance instance,
                                PFN_vkGetInstanceProcAddr pa,
                                InstanceDispatchTable *dt) {
-
   dt->GetPhysicalDeviceDisplayPropertiesKHR =
-      (PFN_vkGetPhysicalDeviceDisplayPropertiesKHR)pa(
-          instance, "vkGetPhysicalDeviceDisplayPropertiesKHR");
+    (PFN_vkGetPhysicalDeviceDisplayPropertiesKHR)pa(
+      instance, "vkGetPhysicalDeviceDisplayPropertiesKHR");
   dt->GetPhysicalDeviceDisplayPlanePropertiesKHR =
-      (PFN_vkGetPhysicalDeviceDisplayPlanePropertiesKHR)pa(
-          instance, "vkGetPhysicalDeviceDisplayPlanePropertiesKHR");
+    (PFN_vkGetPhysicalDeviceDisplayPlanePropertiesKHR)pa(
+      instance, "vkGetPhysicalDeviceDisplayPlanePropertiesKHR");
   dt->GetDisplayPlaneSupportedDisplaysKHR =
-      (PFN_vkGetDisplayPlaneSupportedDisplaysKHR)pa(
-          instance, "vkGetDisplayPlaneSupportedDisplaysKHR");
+    (PFN_vkGetDisplayPlaneSupportedDisplaysKHR)pa(
+      instance, "vkGetDisplayPlaneSupportedDisplaysKHR");
   dt->GetDisplayModePropertiesKHR = (PFN_vkGetDisplayModePropertiesKHR)pa(
-      instance, "vkGetDisplayModePropertiesKHR");
+    instance, "vkGetDisplayModePropertiesKHR");
   dt->CreateDisplayModeKHR =
-      (PFN_vkCreateDisplayModeKHR)pa(instance, "vkCreateDisplayModeKHR");
+    (PFN_vkCreateDisplayModeKHR)pa(instance, "vkCreateDisplayModeKHR");
   dt->GetDisplayPlaneCapabilitiesKHR = (PFN_vkGetDisplayPlaneCapabilitiesKHR)pa(
-      instance, "vkGetDisplayPlaneCapabilitiesKHR");
+    instance, "vkGetDisplayPlaneCapabilitiesKHR");
   dt->CreateDisplayPlaneSurfaceKHR = (PFN_vkCreateDisplayPlaneSurfaceKHR)pa(
-      instance, "vkCreateDisplayPlaneSurfaceKHR");
+    instance, "vkCreateDisplayPlaneSurfaceKHR");
   dt->DestroySurfaceKHR =
-      (PFN_vkDestroySurfaceKHR)pa(instance, "vkDestroySurfaceKHR");
+    (PFN_vkDestroySurfaceKHR)pa(instance, "vkDestroySurfaceKHR");
   dt->GetPhysicalDeviceSurfaceSupportKHR =
-      (PFN_vkGetPhysicalDeviceSurfaceSupportKHR)pa(
-          instance, "vkGetPhysicalDeviceSurfaceSupportKHR");
+    (PFN_vkGetPhysicalDeviceSurfaceSupportKHR)pa(
+      instance, "vkGetPhysicalDeviceSurfaceSupportKHR");
   dt->GetPhysicalDeviceSurfaceCapabilitiesKHR =
-      (PFN_vkGetPhysicalDeviceSurfaceCapabilitiesKHR)pa(
-          instance, "vkGetPhysicalDeviceSurfaceCapabilitiesKHR");
+    (PFN_vkGetPhysicalDeviceSurfaceCapabilitiesKHR)pa(
+      instance, "vkGetPhysicalDeviceSurfaceCapabilitiesKHR");
   dt->GetPhysicalDeviceSurfaceFormatsKHR =
-      (PFN_vkGetPhysicalDeviceSurfaceFormatsKHR)pa(
-          instance, "vkGetPhysicalDeviceSurfaceFormatsKHR");
+    (PFN_vkGetPhysicalDeviceSurfaceFormatsKHR)pa(
+      instance, "vkGetPhysicalDeviceSurfaceFormatsKHR");
   dt->GetPhysicalDeviceSurfacePresentModesKHR =
-      (PFN_vkGetPhysicalDeviceSurfacePresentModesKHR)pa(
-          instance, "vkGetPhysicalDeviceSurfacePresentModesKHR");
+    (PFN_vkGetPhysicalDeviceSurfacePresentModesKHR)pa(
+      instance, "vkGetPhysicalDeviceSurfacePresentModesKHR");
   dt->CreateDebugReportCallbackEXT = (PFN_vkCreateDebugReportCallbackEXT)pa(
-      instance, "vkCreateDebugReportCallbackEXT");
+    instance, "vkCreateDebugReportCallbackEXT");
   dt->DestroyDebugReportCallbackEXT = (PFN_vkDestroyDebugReportCallbackEXT)pa(
-      instance, "vkDestroyDebugReportCallbackEXT");
+    instance, "vkDestroyDebugReportCallbackEXT");
   dt->DebugReportMessageEXT =
-      (PFN_vkDebugReportMessageEXT)pa(instance, "vkDebugReportMessageEXT");
+    (PFN_vkDebugReportMessageEXT)pa(instance, "vkDebugReportMessageEXT");
   dt->GetPhysicalDeviceFeatures2 = (PFN_vkGetPhysicalDeviceFeatures2)pa(
-      instance, "vkGetPhysicalDeviceFeatures2");
+    instance, "vkGetPhysicalDeviceFeatures2");
   dt->GetPhysicalDeviceFeatures2KHR = (PFN_vkGetPhysicalDeviceFeatures2KHR)pa(
-      instance, "vkGetPhysicalDeviceFeatures2KHR");
+    instance, "vkGetPhysicalDeviceFeatures2KHR");
   dt->GetPhysicalDeviceProperties2 = (PFN_vkGetPhysicalDeviceProperties2)pa(
-      instance, "vkGetPhysicalDeviceProperties2");
+    instance, "vkGetPhysicalDeviceProperties2");
   dt->GetPhysicalDeviceProperties2KHR =
-      (PFN_vkGetPhysicalDeviceProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceProperties2KHR");
+    (PFN_vkGetPhysicalDeviceProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceProperties2KHR");
   dt->GetPhysicalDeviceFormatProperties2 =
-      (PFN_vkGetPhysicalDeviceFormatProperties2)pa(
-          instance, "vkGetPhysicalDeviceFormatProperties2");
+    (PFN_vkGetPhysicalDeviceFormatProperties2)pa(
+      instance, "vkGetPhysicalDeviceFormatProperties2");
   dt->GetPhysicalDeviceFormatProperties2KHR =
-      (PFN_vkGetPhysicalDeviceFormatProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceFormatProperties2KHR");
+    (PFN_vkGetPhysicalDeviceFormatProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceFormatProperties2KHR");
   dt->GetPhysicalDeviceImageFormatProperties2 =
-      (PFN_vkGetPhysicalDeviceImageFormatProperties2)pa(
-          instance, "vkGetPhysicalDeviceImageFormatProperties2");
+    (PFN_vkGetPhysicalDeviceImageFormatProperties2)pa(
+      instance, "vkGetPhysicalDeviceImageFormatProperties2");
   dt->GetPhysicalDeviceImageFormatProperties2KHR =
-      (PFN_vkGetPhysicalDeviceImageFormatProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceImageFormatProperties2KHR");
+    (PFN_vkGetPhysicalDeviceImageFormatProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceImageFormatProperties2KHR");
   dt->GetPhysicalDeviceQueueFamilyProperties2 =
-      (PFN_vkGetPhysicalDeviceQueueFamilyProperties2)pa(
-          instance, "vkGetPhysicalDeviceQueueFamilyProperties2");
+    (PFN_vkGetPhysicalDeviceQueueFamilyProperties2)pa(
+      instance, "vkGetPhysicalDeviceQueueFamilyProperties2");
   dt->GetPhysicalDeviceQueueFamilyProperties2KHR =
-      (PFN_vkGetPhysicalDeviceQueueFamilyProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceQueueFamilyProperties2KHR");
+    (PFN_vkGetPhysicalDeviceQueueFamilyProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceQueueFamilyProperties2KHR");
   dt->GetPhysicalDeviceMemoryProperties2 =
-      (PFN_vkGetPhysicalDeviceMemoryProperties2)pa(
-          instance, "vkGetPhysicalDeviceMemoryProperties2");
+    (PFN_vkGetPhysicalDeviceMemoryProperties2)pa(
+      instance, "vkGetPhysicalDeviceMemoryProperties2");
   dt->GetPhysicalDeviceMemoryProperties2KHR =
-      (PFN_vkGetPhysicalDeviceMemoryProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceMemoryProperties2KHR");
+    (PFN_vkGetPhysicalDeviceMemoryProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceMemoryProperties2KHR");
   dt->GetPhysicalDeviceSparseImageFormatProperties2 =
-      (PFN_vkGetPhysicalDeviceSparseImageFormatProperties2)pa(
-          instance, "vkGetPhysicalDeviceSparseImageFormatProperties2");
+    (PFN_vkGetPhysicalDeviceSparseImageFormatProperties2)pa(
+      instance, "vkGetPhysicalDeviceSparseImageFormatProperties2");
   dt->GetPhysicalDeviceSparseImageFormatProperties2KHR =
-      (PFN_vkGetPhysicalDeviceSparseImageFormatProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceSparseImageFormatProperties2KHR");
+    (PFN_vkGetPhysicalDeviceSparseImageFormatProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceSparseImageFormatProperties2KHR");
   dt->GetPhysicalDeviceExternalBufferProperties =
-      (PFN_vkGetPhysicalDeviceExternalBufferProperties)pa(
-          instance, "vkGetPhysicalDeviceExternalBufferProperties");
+    (PFN_vkGetPhysicalDeviceExternalBufferProperties)pa(
+      instance, "vkGetPhysicalDeviceExternalBufferProperties");
   dt->GetPhysicalDeviceExternalBufferPropertiesKHR =
-      (PFN_vkGetPhysicalDeviceExternalBufferPropertiesKHR)pa(
-          instance, "vkGetPhysicalDeviceExternalBufferPropertiesKHR");
+    (PFN_vkGetPhysicalDeviceExternalBufferPropertiesKHR)pa(
+      instance, "vkGetPhysicalDeviceExternalBufferPropertiesKHR");
   dt->GetPhysicalDeviceExternalSemaphoreProperties =
-      (PFN_vkGetPhysicalDeviceExternalSemaphoreProperties)pa(
-          instance, "vkGetPhysicalDeviceExternalSemaphoreProperties");
+    (PFN_vkGetPhysicalDeviceExternalSemaphoreProperties)pa(
+      instance, "vkGetPhysicalDeviceExternalSemaphoreProperties");
   dt->GetPhysicalDeviceExternalSemaphorePropertiesKHR =
-      (PFN_vkGetPhysicalDeviceExternalSemaphorePropertiesKHR)pa(
-          instance, "vkGetPhysicalDeviceExternalSemaphorePropertiesKHR");
+    (PFN_vkGetPhysicalDeviceExternalSemaphorePropertiesKHR)pa(
+      instance, "vkGetPhysicalDeviceExternalSemaphorePropertiesKHR");
   dt->GetPhysicalDeviceExternalFenceProperties =
-      (PFN_vkGetPhysicalDeviceExternalFenceProperties)pa(
-          instance, "vkGetPhysicalDeviceExternalFenceProperties");
+    (PFN_vkGetPhysicalDeviceExternalFenceProperties)pa(
+      instance, "vkGetPhysicalDeviceExternalFenceProperties");
   dt->GetPhysicalDeviceExternalFencePropertiesKHR =
-      (PFN_vkGetPhysicalDeviceExternalFencePropertiesKHR)pa(
-          instance, "vkGetPhysicalDeviceExternalFencePropertiesKHR");
+    (PFN_vkGetPhysicalDeviceExternalFencePropertiesKHR)pa(
+      instance, "vkGetPhysicalDeviceExternalFencePropertiesKHR");
   dt->EnumeratePhysicalDeviceGroups = (PFN_vkEnumeratePhysicalDeviceGroups)pa(
-      instance, "vkEnumeratePhysicalDeviceGroups");
+    instance, "vkEnumeratePhysicalDeviceGroups");
   dt->EnumeratePhysicalDeviceGroupsKHR =
-      (PFN_vkEnumeratePhysicalDeviceGroupsKHR)pa(
-          instance, "vkEnumeratePhysicalDeviceGroupsKHR");
+    (PFN_vkEnumeratePhysicalDeviceGroupsKHR)pa(
+      instance, "vkEnumeratePhysicalDeviceGroupsKHR");
   dt->GetPhysicalDevicePresentRectanglesKHR =
-      (PFN_vkGetPhysicalDevicePresentRectanglesKHR)pa(
-          instance, "vkGetPhysicalDevicePresentRectanglesKHR");
+    (PFN_vkGetPhysicalDevicePresentRectanglesKHR)pa(
+      instance, "vkGetPhysicalDevicePresentRectanglesKHR");
   dt->GetPhysicalDeviceMultisamplePropertiesEXT =
-      (PFN_vkGetPhysicalDeviceMultisamplePropertiesEXT)pa(
-          instance, "vkGetPhysicalDeviceMultisamplePropertiesEXT");
+    (PFN_vkGetPhysicalDeviceMultisamplePropertiesEXT)pa(
+      instance, "vkGetPhysicalDeviceMultisamplePropertiesEXT");
   dt->GetPhysicalDeviceSurfaceCapabilities2KHR =
-      (PFN_vkGetPhysicalDeviceSurfaceCapabilities2KHR)pa(
-          instance, "vkGetPhysicalDeviceSurfaceCapabilities2KHR");
+    (PFN_vkGetPhysicalDeviceSurfaceCapabilities2KHR)pa(
+      instance, "vkGetPhysicalDeviceSurfaceCapabilities2KHR");
   dt->GetPhysicalDeviceSurfaceFormats2KHR =
-      (PFN_vkGetPhysicalDeviceSurfaceFormats2KHR)pa(
-          instance, "vkGetPhysicalDeviceSurfaceFormats2KHR");
+    (PFN_vkGetPhysicalDeviceSurfaceFormats2KHR)pa(
+      instance, "vkGetPhysicalDeviceSurfaceFormats2KHR");
   dt->GetPhysicalDeviceDisplayProperties2KHR =
-      (PFN_vkGetPhysicalDeviceDisplayProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceDisplayProperties2KHR");
+    (PFN_vkGetPhysicalDeviceDisplayProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceDisplayProperties2KHR");
   dt->GetPhysicalDeviceDisplayPlaneProperties2KHR =
-      (PFN_vkGetPhysicalDeviceDisplayPlaneProperties2KHR)pa(
-          instance, "vkGetPhysicalDeviceDisplayPlaneProperties2KHR");
+    (PFN_vkGetPhysicalDeviceDisplayPlaneProperties2KHR)pa(
+      instance, "vkGetPhysicalDeviceDisplayPlaneProperties2KHR");
   dt->GetDisplayModeProperties2KHR = (PFN_vkGetDisplayModeProperties2KHR)pa(
-      instance, "vkGetDisplayModeProperties2KHR");
+    instance, "vkGetDisplayModeProperties2KHR");
   dt->GetDisplayPlaneCapabilities2KHR =
-      (PFN_vkGetDisplayPlaneCapabilities2KHR)pa(
-          instance, "vkGetDisplayPlaneCapabilities2KHR");
+    (PFN_vkGetDisplayPlaneCapabilities2KHR)pa(
+      instance, "vkGetDisplayPlaneCapabilities2KHR");
   dt->GetPhysicalDeviceCalibrateableTimeDomainsEXT =
-      (PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT)pa(
-          instance, "vkGetPhysicalDeviceCalibrateableTimeDomainsEXT");
+    (PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT)pa(
+      instance, "vkGetPhysicalDeviceCalibrateableTimeDomainsEXT");
   dt->CreateDebugUtilsMessengerEXT = (PFN_vkCreateDebugUtilsMessengerEXT)pa(
-      instance, "vkCreateDebugUtilsMessengerEXT");
+    instance, "vkCreateDebugUtilsMessengerEXT");
   dt->DestroyDebugUtilsMessengerEXT = (PFN_vkDestroyDebugUtilsMessengerEXT)pa(
-      instance, "vkDestroyDebugUtilsMessengerEXT");
+    instance, "vkDestroyDebugUtilsMessengerEXT");
   dt->SubmitDebugUtilsMessageEXT = (PFN_vkSubmitDebugUtilsMessageEXT)pa(
-      instance, "vkSubmitDebugUtilsMessageEXT");
+    instance, "vkSubmitDebugUtilsMessageEXT");
   dt->EnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR =
-      (PFN_vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR)pa(
-          instance,
-          "vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR");
+    (PFN_vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR)pa(
+      instance,
+      "vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR");
   dt->GetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR =
-      (PFN_vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR)pa(
-          instance, "vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR");
-  dt->CreateHeadlessSurfaceEXT = (PFN_vkCreateHeadlessSurfaceEXT)pa(
-      instance, "vkCreateHeadlessSurfaceEXT");
+    (PFN_vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR)pa(
+      instance, "vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR");
+  dt->CreateHeadlessSurfaceEXT =
+    (PFN_vkCreateHeadlessSurfaceEXT)pa(instance, "vkCreateHeadlessSurfaceEXT");
   dt->GetPhysicalDeviceToolPropertiesEXT =
-      (PFN_vkGetPhysicalDeviceToolPropertiesEXT)pa(
-          instance, "vkGetPhysicalDeviceToolPropertiesEXT");
+    (PFN_vkGetPhysicalDeviceToolPropertiesEXT)pa(
+      instance, "vkGetPhysicalDeviceToolPropertiesEXT");
   dt->GetPhysicalDeviceFragmentShadingRatesKHR =
-      (PFN_vkGetPhysicalDeviceFragmentShadingRatesKHR)pa(
-          instance, "vkGetPhysicalDeviceFragmentShadingRatesKHR");
+    (PFN_vkGetPhysicalDeviceFragmentShadingRatesKHR)pa(
+      instance, "vkGetPhysicalDeviceFragmentShadingRatesKHR");
   dt->AcquireDrmDisplayEXT =
-      (PFN_vkAcquireDrmDisplayEXT)pa(instance, "vkAcquireDrmDisplayEXT");
+    (PFN_vkAcquireDrmDisplayEXT)pa(instance, "vkAcquireDrmDisplayEXT");
   dt->GetDrmDisplayEXT =
-      (PFN_vkGetDrmDisplayEXT)pa(instance, "vkGetDrmDisplayEXT");
+    (PFN_vkGetDrmDisplayEXT)pa(instance, "vkGetDrmDisplayEXT");
   dt->CreateInstance = (PFN_vkCreateInstance)pa(instance, "vkCreateInstance");
   dt->DestroyInstance =
-      (PFN_vkDestroyInstance)pa(instance, "vkDestroyInstance");
-  dt->EnumeratePhysicalDevices = (PFN_vkEnumeratePhysicalDevices)pa(
-      instance, "vkEnumeratePhysicalDevices");
+    (PFN_vkDestroyInstance)pa(instance, "vkDestroyInstance");
+  dt->EnumeratePhysicalDevices =
+    (PFN_vkEnumeratePhysicalDevices)pa(instance, "vkEnumeratePhysicalDevices");
   dt->GetInstanceProcAddr =
-      (PFN_vkGetInstanceProcAddr)pa(instance, "vkGetInstanceProcAddr");
+    (PFN_vkGetInstanceProcAddr)pa(instance, "vkGetInstanceProcAddr");
   dt->GetPhysicalDeviceProperties = (PFN_vkGetPhysicalDeviceProperties)pa(
-      instance, "vkGetPhysicalDeviceProperties");
+    instance, "vkGetPhysicalDeviceProperties");
   dt->GetPhysicalDeviceQueueFamilyProperties =
-      (PFN_vkGetPhysicalDeviceQueueFamilyProperties)pa(
-          instance, "vkGetPhysicalDeviceQueueFamilyProperties");
+    (PFN_vkGetPhysicalDeviceQueueFamilyProperties)pa(
+      instance, "vkGetPhysicalDeviceQueueFamilyProperties");
   dt->GetPhysicalDeviceMemoryProperties =
-      (PFN_vkGetPhysicalDeviceMemoryProperties)pa(
-          instance, "vkGetPhysicalDeviceMemoryProperties");
+    (PFN_vkGetPhysicalDeviceMemoryProperties)pa(
+      instance, "vkGetPhysicalDeviceMemoryProperties");
   dt->GetPhysicalDeviceFeatures = (PFN_vkGetPhysicalDeviceFeatures)pa(
-      instance, "vkGetPhysicalDeviceFeatures");
+    instance, "vkGetPhysicalDeviceFeatures");
   dt->GetPhysicalDeviceFormatProperties =
-      (PFN_vkGetPhysicalDeviceFormatProperties)pa(
-          instance, "vkGetPhysicalDeviceFormatProperties");
+    (PFN_vkGetPhysicalDeviceFormatProperties)pa(
+      instance, "vkGetPhysicalDeviceFormatProperties");
   dt->GetPhysicalDeviceImageFormatProperties =
-      (PFN_vkGetPhysicalDeviceImageFormatProperties)pa(
-          instance, "vkGetPhysicalDeviceImageFormatProperties");
+    (PFN_vkGetPhysicalDeviceImageFormatProperties)pa(
+      instance, "vkGetPhysicalDeviceImageFormatProperties");
   dt->CreateDevice = (PFN_vkCreateDevice)pa(instance, "vkCreateDevice");
   dt->EnumerateDeviceLayerProperties = (PFN_vkEnumerateDeviceLayerProperties)pa(
-      instance, "vkEnumerateDeviceLayerProperties");
+    instance, "vkEnumerateDeviceLayerProperties");
   dt->EnumerateDeviceExtensionProperties =
-      (PFN_vkEnumerateDeviceExtensionProperties)pa(
-          instance, "vkEnumerateDeviceExtensionProperties");
+    (PFN_vkEnumerateDeviceExtensionProperties)pa(
+      instance, "vkEnumerateDeviceExtensionProperties");
   dt->GetPhysicalDeviceSparseImageFormatProperties =
-      (PFN_vkGetPhysicalDeviceSparseImageFormatProperties)pa(
-          instance, "vkGetPhysicalDeviceSparseImageFormatProperties");
+    (PFN_vkGetPhysicalDeviceSparseImageFormatProperties)pa(
+      instance, "vkGetPhysicalDeviceSparseImageFormatProperties");
 
 #ifdef VK_USE_PLATFORM_GGP
   dt->CreateStreamDescriptorSurfaceGGP =
-      (PFN_vkCreateStreamDescriptorSurfaceGGP)pa(
-          instance, "vkCreateStreamDescriptorSurfaceGGP");
+    (PFN_vkCreateStreamDescriptorSurfaceGGP)pa(
+      instance, "vkCreateStreamDescriptorSurfaceGGP");
 
 #endif // VK_USE_PLATFORM_GGP
 }
 
 void InitDeviceDispatchTable(VkDevice device, PFN_vkGetDeviceProcAddr pa,
                              DeviceDispatchTable *dt) {
-
   dt->ResetQueryPool = (PFN_vkResetQueryPool)pa(device, "vkResetQueryPool");
   dt->ResetQueryPoolEXT =
-      (PFN_vkResetQueryPoolEXT)pa(device, "vkResetQueryPoolEXT");
+    (PFN_vkResetQueryPoolEXT)pa(device, "vkResetQueryPoolEXT");
   dt->CmdDrawMultiEXT = (PFN_vkCmdDrawMultiEXT)pa(device, "vkCmdDrawMultiEXT");
   dt->CmdDrawMultiIndexedEXT =
-      (PFN_vkCmdDrawMultiIndexedEXT)pa(device, "vkCmdDrawMultiIndexedEXT");
-  dt->CreateSharedSwapchainsKHR = (PFN_vkCreateSharedSwapchainsKHR)pa(
-      device, "vkCreateSharedSwapchainsKHR");
+    (PFN_vkCmdDrawMultiIndexedEXT)pa(device, "vkCmdDrawMultiIndexedEXT");
+  dt->CreateSharedSwapchainsKHR =
+    (PFN_vkCreateSharedSwapchainsKHR)pa(device, "vkCreateSharedSwapchainsKHR");
   dt->CreateSwapchainKHR =
-      (PFN_vkCreateSwapchainKHR)pa(device, "vkCreateSwapchainKHR");
+    (PFN_vkCreateSwapchainKHR)pa(device, "vkCreateSwapchainKHR");
   dt->DestroySwapchainKHR =
-      (PFN_vkDestroySwapchainKHR)pa(device, "vkDestroySwapchainKHR");
+    (PFN_vkDestroySwapchainKHR)pa(device, "vkDestroySwapchainKHR");
   dt->GetSwapchainImagesKHR =
-      (PFN_vkGetSwapchainImagesKHR)pa(device, "vkGetSwapchainImagesKHR");
+    (PFN_vkGetSwapchainImagesKHR)pa(device, "vkGetSwapchainImagesKHR");
   dt->AcquireNextImageKHR =
-      (PFN_vkAcquireNextImageKHR)pa(device, "vkAcquireNextImageKHR");
+    (PFN_vkAcquireNextImageKHR)pa(device, "vkAcquireNextImageKHR");
   dt->QueuePresentKHR = (PFN_vkQueuePresentKHR)pa(device, "vkQueuePresentKHR");
   dt->DebugMarkerSetObjectNameEXT = (PFN_vkDebugMarkerSetObjectNameEXT)pa(
-      device, "vkDebugMarkerSetObjectNameEXT");
+    device, "vkDebugMarkerSetObjectNameEXT");
   dt->DebugMarkerSetObjectTagEXT = (PFN_vkDebugMarkerSetObjectTagEXT)pa(
-      device, "vkDebugMarkerSetObjectTagEXT");
+    device, "vkDebugMarkerSetObjectTagEXT");
   dt->CmdDebugMarkerBeginEXT =
-      (PFN_vkCmdDebugMarkerBeginEXT)pa(device, "vkCmdDebugMarkerBeginEXT");
+    (PFN_vkCmdDebugMarkerBeginEXT)pa(device, "vkCmdDebugMarkerBeginEXT");
   dt->CmdDebugMarkerEndEXT =
-      (PFN_vkCmdDebugMarkerEndEXT)pa(device, "vkCmdDebugMarkerEndEXT");
+    (PFN_vkCmdDebugMarkerEndEXT)pa(device, "vkCmdDebugMarkerEndEXT");
   dt->CmdDebugMarkerInsertEXT =
-      (PFN_vkCmdDebugMarkerInsertEXT)pa(device, "vkCmdDebugMarkerInsertEXT");
+    (PFN_vkCmdDebugMarkerInsertEXT)pa(device, "vkCmdDebugMarkerInsertEXT");
   dt->CmdPushDescriptorSetKHR =
-      (PFN_vkCmdPushDescriptorSetKHR)pa(device, "vkCmdPushDescriptorSetKHR");
+    (PFN_vkCmdPushDescriptorSetKHR)pa(device, "vkCmdPushDescriptorSetKHR");
   dt->TrimCommandPool = (PFN_vkTrimCommandPool)pa(device, "vkTrimCommandPool");
   dt->TrimCommandPoolKHR =
-      (PFN_vkTrimCommandPoolKHR)pa(device, "vkTrimCommandPoolKHR");
+    (PFN_vkTrimCommandPoolKHR)pa(device, "vkTrimCommandPoolKHR");
   dt->GetMemoryFdKHR = (PFN_vkGetMemoryFdKHR)pa(device, "vkGetMemoryFdKHR");
   dt->GetMemoryFdPropertiesKHR =
-      (PFN_vkGetMemoryFdPropertiesKHR)pa(device, "vkGetMemoryFdPropertiesKHR");
+    (PFN_vkGetMemoryFdPropertiesKHR)pa(device, "vkGetMemoryFdPropertiesKHR");
   dt->GetSemaphoreFdKHR =
-      (PFN_vkGetSemaphoreFdKHR)pa(device, "vkGetSemaphoreFdKHR");
+    (PFN_vkGetSemaphoreFdKHR)pa(device, "vkGetSemaphoreFdKHR");
   dt->ImportSemaphoreFdKHR =
-      (PFN_vkImportSemaphoreFdKHR)pa(device, "vkImportSemaphoreFdKHR");
+    (PFN_vkImportSemaphoreFdKHR)pa(device, "vkImportSemaphoreFdKHR");
   dt->GetFenceFdKHR = (PFN_vkGetFenceFdKHR)pa(device, "vkGetFenceFdKHR");
   dt->ImportFenceFdKHR =
-      (PFN_vkImportFenceFdKHR)pa(device, "vkImportFenceFdKHR");
+    (PFN_vkImportFenceFdKHR)pa(device, "vkImportFenceFdKHR");
   dt->GetDeviceGroupPeerMemoryFeatures =
-      (PFN_vkGetDeviceGroupPeerMemoryFeatures)pa(
-          device, "vkGetDeviceGroupPeerMemoryFeatures");
+    (PFN_vkGetDeviceGroupPeerMemoryFeatures)pa(
+      device, "vkGetDeviceGroupPeerMemoryFeatures");
   dt->GetDeviceGroupPeerMemoryFeaturesKHR =
-      (PFN_vkGetDeviceGroupPeerMemoryFeaturesKHR)pa(
-          device, "vkGetDeviceGroupPeerMemoryFeaturesKHR");
+    (PFN_vkGetDeviceGroupPeerMemoryFeaturesKHR)pa(
+      device, "vkGetDeviceGroupPeerMemoryFeaturesKHR");
   dt->BindBufferMemory2 =
-      (PFN_vkBindBufferMemory2)pa(device, "vkBindBufferMemory2");
+    (PFN_vkBindBufferMemory2)pa(device, "vkBindBufferMemory2");
   dt->BindBufferMemory2KHR =
-      (PFN_vkBindBufferMemory2KHR)pa(device, "vkBindBufferMemory2KHR");
+    (PFN_vkBindBufferMemory2KHR)pa(device, "vkBindBufferMemory2KHR");
   dt->BindImageMemory2 =
-      (PFN_vkBindImageMemory2)pa(device, "vkBindImageMemory2");
+    (PFN_vkBindImageMemory2)pa(device, "vkBindImageMemory2");
   dt->BindImageMemory2KHR =
-      (PFN_vkBindImageMemory2KHR)pa(device, "vkBindImageMemory2KHR");
+    (PFN_vkBindImageMemory2KHR)pa(device, "vkBindImageMemory2KHR");
   dt->CmdSetDeviceMask =
-      (PFN_vkCmdSetDeviceMask)pa(device, "vkCmdSetDeviceMask");
+    (PFN_vkCmdSetDeviceMask)pa(device, "vkCmdSetDeviceMask");
   dt->CmdSetDeviceMaskKHR =
-      (PFN_vkCmdSetDeviceMaskKHR)pa(device, "vkCmdSetDeviceMaskKHR");
+    (PFN_vkCmdSetDeviceMaskKHR)pa(device, "vkCmdSetDeviceMaskKHR");
   dt->GetDeviceGroupPresentCapabilitiesKHR =
-      (PFN_vkGetDeviceGroupPresentCapabilitiesKHR)pa(
-          device, "vkGetDeviceGroupPresentCapabilitiesKHR");
+    (PFN_vkGetDeviceGroupPresentCapabilitiesKHR)pa(
+      device, "vkGetDeviceGroupPresentCapabilitiesKHR");
   dt->GetDeviceGroupSurfacePresentModesKHR =
-      (PFN_vkGetDeviceGroupSurfacePresentModesKHR)pa(
-          device, "vkGetDeviceGroupSurfacePresentModesKHR");
+    (PFN_vkGetDeviceGroupSurfacePresentModesKHR)pa(
+      device, "vkGetDeviceGroupSurfacePresentModesKHR");
   dt->AcquireNextImage2KHR =
-      (PFN_vkAcquireNextImage2KHR)pa(device, "vkAcquireNextImage2KHR");
+    (PFN_vkAcquireNextImage2KHR)pa(device, "vkAcquireNextImage2KHR");
   dt->CmdDispatchBase = (PFN_vkCmdDispatchBase)pa(device, "vkCmdDispatchBase");
   dt->CmdDispatchBaseKHR =
-      (PFN_vkCmdDispatchBaseKHR)pa(device, "vkCmdDispatchBaseKHR");
+    (PFN_vkCmdDispatchBaseKHR)pa(device, "vkCmdDispatchBaseKHR");
   dt->CreateDescriptorUpdateTemplate = (PFN_vkCreateDescriptorUpdateTemplate)pa(
-      device, "vkCreateDescriptorUpdateTemplate");
+    device, "vkCreateDescriptorUpdateTemplate");
   dt->CreateDescriptorUpdateTemplateKHR =
-      (PFN_vkCreateDescriptorUpdateTemplateKHR)pa(
-          device, "vkCreateDescriptorUpdateTemplateKHR");
+    (PFN_vkCreateDescriptorUpdateTemplateKHR)pa(
+      device, "vkCreateDescriptorUpdateTemplateKHR");
   dt->DestroyDescriptorUpdateTemplate =
-      (PFN_vkDestroyDescriptorUpdateTemplate)pa(
-          device, "vkDestroyDescriptorUpdateTemplate");
+    (PFN_vkDestroyDescriptorUpdateTemplate)pa(
+      device, "vkDestroyDescriptorUpdateTemplate");
   dt->DestroyDescriptorUpdateTemplateKHR =
-      (PFN_vkDestroyDescriptorUpdateTemplateKHR)pa(
-          device, "vkDestroyDescriptorUpdateTemplateKHR");
+    (PFN_vkDestroyDescriptorUpdateTemplateKHR)pa(
+      device, "vkDestroyDescriptorUpdateTemplateKHR");
   dt->UpdateDescriptorSetWithTemplate =
-      (PFN_vkUpdateDescriptorSetWithTemplate)pa(
-          device, "vkUpdateDescriptorSetWithTemplate");
+    (PFN_vkUpdateDescriptorSetWithTemplate)pa(
+      device, "vkUpdateDescriptorSetWithTemplate");
   dt->UpdateDescriptorSetWithTemplateKHR =
-      (PFN_vkUpdateDescriptorSetWithTemplateKHR)pa(
-          device, "vkUpdateDescriptorSetWithTemplateKHR");
+    (PFN_vkUpdateDescriptorSetWithTemplateKHR)pa(
+      device, "vkUpdateDescriptorSetWithTemplateKHR");
   dt->CmdPushDescriptorSetWithTemplateKHR =
-      (PFN_vkCmdPushDescriptorSetWithTemplateKHR)pa(
-          device, "vkCmdPushDescriptorSetWithTemplateKHR");
+    (PFN_vkCmdPushDescriptorSetWithTemplateKHR)pa(
+      device, "vkCmdPushDescriptorSetWithTemplateKHR");
   dt->GetSwapchainStatusKHR =
-      (PFN_vkGetSwapchainStatusKHR)pa(device, "vkGetSwapchainStatusKHR");
+    (PFN_vkGetSwapchainStatusKHR)pa(device, "vkGetSwapchainStatusKHR");
   dt->CmdSetSampleLocationsEXT =
-      (PFN_vkCmdSetSampleLocationsEXT)pa(device, "vkCmdSetSampleLocationsEXT");
+    (PFN_vkCmdSetSampleLocationsEXT)pa(device, "vkCmdSetSampleLocationsEXT");
   dt->GetBufferMemoryRequirements2 = (PFN_vkGetBufferMemoryRequirements2)pa(
-      device, "vkGetBufferMemoryRequirements2");
+    device, "vkGetBufferMemoryRequirements2");
   dt->GetBufferMemoryRequirements2KHR =
-      (PFN_vkGetBufferMemoryRequirements2KHR)pa(
-          device, "vkGetBufferMemoryRequirements2KHR");
+    (PFN_vkGetBufferMemoryRequirements2KHR)pa(
+      device, "vkGetBufferMemoryRequirements2KHR");
   dt->GetImageMemoryRequirements2 = (PFN_vkGetImageMemoryRequirements2)pa(
-      device, "vkGetImageMemoryRequirements2");
+    device, "vkGetImageMemoryRequirements2");
   dt->GetImageMemoryRequirements2KHR = (PFN_vkGetImageMemoryRequirements2KHR)pa(
-      device, "vkGetImageMemoryRequirements2KHR");
+    device, "vkGetImageMemoryRequirements2KHR");
   dt->GetImageSparseMemoryRequirements2 =
-      (PFN_vkGetImageSparseMemoryRequirements2)pa(
-          device, "vkGetImageSparseMemoryRequirements2");
+    (PFN_vkGetImageSparseMemoryRequirements2)pa(
+      device, "vkGetImageSparseMemoryRequirements2");
   dt->GetImageSparseMemoryRequirements2KHR =
-      (PFN_vkGetImageSparseMemoryRequirements2KHR)pa(
-          device, "vkGetImageSparseMemoryRequirements2KHR");
+    (PFN_vkGetImageSparseMemoryRequirements2KHR)pa(
+      device, "vkGetImageSparseMemoryRequirements2KHR");
   dt->CreateSamplerYcbcrConversion = (PFN_vkCreateSamplerYcbcrConversion)pa(
-      device, "vkCreateSamplerYcbcrConversion");
+    device, "vkCreateSamplerYcbcrConversion");
   dt->CreateSamplerYcbcrConversionKHR =
-      (PFN_vkCreateSamplerYcbcrConversionKHR)pa(
-          device, "vkCreateSamplerYcbcrConversionKHR");
+    (PFN_vkCreateSamplerYcbcrConversionKHR)pa(
+      device, "vkCreateSamplerYcbcrConversionKHR");
   dt->DestroySamplerYcbcrConversion = (PFN_vkDestroySamplerYcbcrConversion)pa(
-      device, "vkDestroySamplerYcbcrConversion");
+    device, "vkDestroySamplerYcbcrConversion");
   dt->DestroySamplerYcbcrConversionKHR =
-      (PFN_vkDestroySamplerYcbcrConversionKHR)pa(
-          device, "vkDestroySamplerYcbcrConversionKHR");
+    (PFN_vkDestroySamplerYcbcrConversionKHR)pa(
+      device, "vkDestroySamplerYcbcrConversionKHR");
   dt->GetDescriptorSetLayoutSupport = (PFN_vkGetDescriptorSetLayoutSupport)pa(
-      device, "vkGetDescriptorSetLayoutSupport");
+    device, "vkGetDescriptorSetLayoutSupport");
   dt->GetDescriptorSetLayoutSupportKHR =
-      (PFN_vkGetDescriptorSetLayoutSupportKHR)pa(
-          device, "vkGetDescriptorSetLayoutSupportKHR");
+    (PFN_vkGetDescriptorSetLayoutSupportKHR)pa(
+      device, "vkGetDescriptorSetLayoutSupportKHR");
   dt->GetShaderInfoAMD =
-      (PFN_vkGetShaderInfoAMD)pa(device, "vkGetShaderInfoAMD");
+    (PFN_vkGetShaderInfoAMD)pa(device, "vkGetShaderInfoAMD");
   dt->SetLocalDimmingAMD =
-      (PFN_vkSetLocalDimmingAMD)pa(device, "vkSetLocalDimmingAMD");
+    (PFN_vkSetLocalDimmingAMD)pa(device, "vkSetLocalDimmingAMD");
   dt->GetCalibratedTimestampsEXT = (PFN_vkGetCalibratedTimestampsEXT)pa(
-      device, "vkGetCalibratedTimestampsEXT");
+    device, "vkGetCalibratedTimestampsEXT");
   dt->SetDebugUtilsObjectNameEXT = (PFN_vkSetDebugUtilsObjectNameEXT)pa(
-      device, "vkSetDebugUtilsObjectNameEXT");
-  dt->SetDebugUtilsObjectTagEXT = (PFN_vkSetDebugUtilsObjectTagEXT)pa(
-      device, "vkSetDebugUtilsObjectTagEXT");
+    device, "vkSetDebugUtilsObjectNameEXT");
+  dt->SetDebugUtilsObjectTagEXT =
+    (PFN_vkSetDebugUtilsObjectTagEXT)pa(device, "vkSetDebugUtilsObjectTagEXT");
   dt->QueueBeginDebugUtilsLabelEXT = (PFN_vkQueueBeginDebugUtilsLabelEXT)pa(
-      device, "vkQueueBeginDebugUtilsLabelEXT");
+    device, "vkQueueBeginDebugUtilsLabelEXT");
   dt->QueueEndDebugUtilsLabelEXT = (PFN_vkQueueEndDebugUtilsLabelEXT)pa(
-      device, "vkQueueEndDebugUtilsLabelEXT");
+    device, "vkQueueEndDebugUtilsLabelEXT");
   dt->QueueInsertDebugUtilsLabelEXT = (PFN_vkQueueInsertDebugUtilsLabelEXT)pa(
-      device, "vkQueueInsertDebugUtilsLabelEXT");
+    device, "vkQueueInsertDebugUtilsLabelEXT");
   dt->CmdBeginDebugUtilsLabelEXT = (PFN_vkCmdBeginDebugUtilsLabelEXT)pa(
-      device, "vkCmdBeginDebugUtilsLabelEXT");
+    device, "vkCmdBeginDebugUtilsLabelEXT");
   dt->CmdEndDebugUtilsLabelEXT =
-      (PFN_vkCmdEndDebugUtilsLabelEXT)pa(device, "vkCmdEndDebugUtilsLabelEXT");
+    (PFN_vkCmdEndDebugUtilsLabelEXT)pa(device, "vkCmdEndDebugUtilsLabelEXT");
   dt->CmdInsertDebugUtilsLabelEXT = (PFN_vkCmdInsertDebugUtilsLabelEXT)pa(
-      device, "vkCmdInsertDebugUtilsLabelEXT");
+    device, "vkCmdInsertDebugUtilsLabelEXT");
   dt->GetMemoryHostPointerPropertiesEXT =
-      (PFN_vkGetMemoryHostPointerPropertiesEXT)pa(
-          device, "vkGetMemoryHostPointerPropertiesEXT");
+    (PFN_vkGetMemoryHostPointerPropertiesEXT)pa(
+      device, "vkGetMemoryHostPointerPropertiesEXT");
   dt->CmdWriteBufferMarkerAMD =
-      (PFN_vkCmdWriteBufferMarkerAMD)pa(device, "vkCmdWriteBufferMarkerAMD");
+    (PFN_vkCmdWriteBufferMarkerAMD)pa(device, "vkCmdWriteBufferMarkerAMD");
   dt->CreateRenderPass2 =
-      (PFN_vkCreateRenderPass2)pa(device, "vkCreateRenderPass2");
+    (PFN_vkCreateRenderPass2)pa(device, "vkCreateRenderPass2");
   dt->CreateRenderPass2KHR =
-      (PFN_vkCreateRenderPass2KHR)pa(device, "vkCreateRenderPass2KHR");
+    (PFN_vkCreateRenderPass2KHR)pa(device, "vkCreateRenderPass2KHR");
   dt->CmdBeginRenderPass2 =
-      (PFN_vkCmdBeginRenderPass2)pa(device, "vkCmdBeginRenderPass2");
+    (PFN_vkCmdBeginRenderPass2)pa(device, "vkCmdBeginRenderPass2");
   dt->CmdBeginRenderPass2KHR =
-      (PFN_vkCmdBeginRenderPass2KHR)pa(device, "vkCmdBeginRenderPass2KHR");
+    (PFN_vkCmdBeginRenderPass2KHR)pa(device, "vkCmdBeginRenderPass2KHR");
   dt->CmdNextSubpass2 = (PFN_vkCmdNextSubpass2)pa(device, "vkCmdNextSubpass2");
   dt->CmdNextSubpass2KHR =
-      (PFN_vkCmdNextSubpass2KHR)pa(device, "vkCmdNextSubpass2KHR");
+    (PFN_vkCmdNextSubpass2KHR)pa(device, "vkCmdNextSubpass2KHR");
   dt->CmdEndRenderPass2 =
-      (PFN_vkCmdEndRenderPass2)pa(device, "vkCmdEndRenderPass2");
+    (PFN_vkCmdEndRenderPass2)pa(device, "vkCmdEndRenderPass2");
   dt->CmdEndRenderPass2KHR =
-      (PFN_vkCmdEndRenderPass2KHR)pa(device, "vkCmdEndRenderPass2KHR");
+    (PFN_vkCmdEndRenderPass2KHR)pa(device, "vkCmdEndRenderPass2KHR");
   dt->GetSemaphoreCounterValue =
-      (PFN_vkGetSemaphoreCounterValue)pa(device, "vkGetSemaphoreCounterValue");
+    (PFN_vkGetSemaphoreCounterValue)pa(device, "vkGetSemaphoreCounterValue");
   dt->GetSemaphoreCounterValueKHR = (PFN_vkGetSemaphoreCounterValueKHR)pa(
-      device, "vkGetSemaphoreCounterValueKHR");
+    device, "vkGetSemaphoreCounterValueKHR");
   dt->WaitSemaphores = (PFN_vkWaitSemaphores)pa(device, "vkWaitSemaphores");
   dt->WaitSemaphoresKHR =
-      (PFN_vkWaitSemaphoresKHR)pa(device, "vkWaitSemaphoresKHR");
+    (PFN_vkWaitSemaphoresKHR)pa(device, "vkWaitSemaphoresKHR");
   dt->SignalSemaphore = (PFN_vkSignalSemaphore)pa(device, "vkSignalSemaphore");
   dt->SignalSemaphoreKHR =
-      (PFN_vkSignalSemaphoreKHR)pa(device, "vkSignalSemaphoreKHR");
+    (PFN_vkSignalSemaphoreKHR)pa(device, "vkSignalSemaphoreKHR");
   dt->CmdDrawIndirectCount =
-      (PFN_vkCmdDrawIndirectCount)pa(device, "vkCmdDrawIndirectCount");
+    (PFN_vkCmdDrawIndirectCount)pa(device, "vkCmdDrawIndirectCount");
   dt->CmdDrawIndirectCountKHR =
-      (PFN_vkCmdDrawIndirectCountKHR)pa(device, "vkCmdDrawIndirectCountKHR");
+    (PFN_vkCmdDrawIndirectCountKHR)pa(device, "vkCmdDrawIndirectCountKHR");
   dt->CmdDrawIndirectCountAMD =
-      (PFN_vkCmdDrawIndirectCountAMD)pa(device, "vkCmdDrawIndirectCountAMD");
+    (PFN_vkCmdDrawIndirectCountAMD)pa(device, "vkCmdDrawIndirectCountAMD");
   dt->CmdDrawIndexedIndirectCount = (PFN_vkCmdDrawIndexedIndirectCount)pa(
-      device, "vkCmdDrawIndexedIndirectCount");
+    device, "vkCmdDrawIndexedIndirectCount");
   dt->CmdDrawIndexedIndirectCountKHR = (PFN_vkCmdDrawIndexedIndirectCountKHR)pa(
-      device, "vkCmdDrawIndexedIndirectCountKHR");
+    device, "vkCmdDrawIndexedIndirectCountKHR");
   dt->CmdDrawIndexedIndirectCountAMD = (PFN_vkCmdDrawIndexedIndirectCountAMD)pa(
-      device, "vkCmdDrawIndexedIndirectCountAMD");
+    device, "vkCmdDrawIndexedIndirectCountAMD");
   dt->DestroyAccelerationStructureKHR =
-      (PFN_vkDestroyAccelerationStructureKHR)pa(
-          device, "vkDestroyAccelerationStructureKHR");
+    (PFN_vkDestroyAccelerationStructureKHR)pa(
+      device, "vkDestroyAccelerationStructureKHR");
   dt->CmdCopyAccelerationStructureKHR =
-      (PFN_vkCmdCopyAccelerationStructureKHR)pa(
-          device, "vkCmdCopyAccelerationStructureKHR");
+    (PFN_vkCmdCopyAccelerationStructureKHR)pa(
+      device, "vkCmdCopyAccelerationStructureKHR");
   dt->CopyAccelerationStructureKHR = (PFN_vkCopyAccelerationStructureKHR)pa(
-      device, "vkCopyAccelerationStructureKHR");
+    device, "vkCopyAccelerationStructureKHR");
   dt->CmdCopyAccelerationStructureToMemoryKHR =
-      (PFN_vkCmdCopyAccelerationStructureToMemoryKHR)pa(
-          device, "vkCmdCopyAccelerationStructureToMemoryKHR");
+    (PFN_vkCmdCopyAccelerationStructureToMemoryKHR)pa(
+      device, "vkCmdCopyAccelerationStructureToMemoryKHR");
   dt->CopyAccelerationStructureToMemoryKHR =
-      (PFN_vkCopyAccelerationStructureToMemoryKHR)pa(
-          device, "vkCopyAccelerationStructureToMemoryKHR");
+    (PFN_vkCopyAccelerationStructureToMemoryKHR)pa(
+      device, "vkCopyAccelerationStructureToMemoryKHR");
   dt->CmdCopyMemoryToAccelerationStructureKHR =
-      (PFN_vkCmdCopyMemoryToAccelerationStructureKHR)pa(
-          device, "vkCmdCopyMemoryToAccelerationStructureKHR");
+    (PFN_vkCmdCopyMemoryToAccelerationStructureKHR)pa(
+      device, "vkCmdCopyMemoryToAccelerationStructureKHR");
   dt->CopyMemoryToAccelerationStructureKHR =
-      (PFN_vkCopyMemoryToAccelerationStructureKHR)pa(
-          device, "vkCopyMemoryToAccelerationStructureKHR");
+    (PFN_vkCopyMemoryToAccelerationStructureKHR)pa(
+      device, "vkCopyMemoryToAccelerationStructureKHR");
   dt->CmdWriteAccelerationStructuresPropertiesKHR =
-      (PFN_vkCmdWriteAccelerationStructuresPropertiesKHR)pa(
-          device, "vkCmdWriteAccelerationStructuresPropertiesKHR");
+    (PFN_vkCmdWriteAccelerationStructuresPropertiesKHR)pa(
+      device, "vkCmdWriteAccelerationStructuresPropertiesKHR");
   dt->WriteAccelerationStructuresPropertiesKHR =
-      (PFN_vkWriteAccelerationStructuresPropertiesKHR)pa(
-          device, "vkWriteAccelerationStructuresPropertiesKHR");
+    (PFN_vkWriteAccelerationStructuresPropertiesKHR)pa(
+      device, "vkWriteAccelerationStructuresPropertiesKHR");
   dt->CmdTraceRaysKHR = (PFN_vkCmdTraceRaysKHR)pa(device, "vkCmdTraceRaysKHR");
   dt->GetRayTracingShaderGroupHandlesKHR =
-      (PFN_vkGetRayTracingShaderGroupHandlesKHR)pa(
-          device, "vkGetRayTracingShaderGroupHandlesKHR");
+    (PFN_vkGetRayTracingShaderGroupHandlesKHR)pa(
+      device, "vkGetRayTracingShaderGroupHandlesKHR");
   dt->GetRayTracingShaderGroupHandlesNV =
-      (PFN_vkGetRayTracingShaderGroupHandlesNV)pa(
-          device, "vkGetRayTracingShaderGroupHandlesNV");
+    (PFN_vkGetRayTracingShaderGroupHandlesNV)pa(
+      device, "vkGetRayTracingShaderGroupHandlesNV");
   dt->GetRayTracingCaptureReplayShaderGroupHandlesKHR =
-      (PFN_vkGetRayTracingCaptureReplayShaderGroupHandlesKHR)pa(
-          device, "vkGetRayTracingCaptureReplayShaderGroupHandlesKHR");
+    (PFN_vkGetRayTracingCaptureReplayShaderGroupHandlesKHR)pa(
+      device, "vkGetRayTracingCaptureReplayShaderGroupHandlesKHR");
   dt->CreateRayTracingPipelinesKHR = (PFN_vkCreateRayTracingPipelinesKHR)pa(
-      device, "vkCreateRayTracingPipelinesKHR");
+    device, "vkCreateRayTracingPipelinesKHR");
   dt->CmdTraceRaysIndirectKHR =
-      (PFN_vkCmdTraceRaysIndirectKHR)pa(device, "vkCmdTraceRaysIndirectKHR");
+    (PFN_vkCmdTraceRaysIndirectKHR)pa(device, "vkCmdTraceRaysIndirectKHR");
   dt->GetDeviceAccelerationStructureCompatibilityKHR =
-      (PFN_vkGetDeviceAccelerationStructureCompatibilityKHR)pa(
-          device, "vkGetDeviceAccelerationStructureCompatibilityKHR");
+    (PFN_vkGetDeviceAccelerationStructureCompatibilityKHR)pa(
+      device, "vkGetDeviceAccelerationStructureCompatibilityKHR");
   dt->GetRayTracingShaderGroupStackSizeKHR =
-      (PFN_vkGetRayTracingShaderGroupStackSizeKHR)pa(
-          device, "vkGetRayTracingShaderGroupStackSizeKHR");
+    (PFN_vkGetRayTracingShaderGroupStackSizeKHR)pa(
+      device, "vkGetRayTracingShaderGroupStackSizeKHR");
   dt->CmdSetRayTracingPipelineStackSizeKHR =
-      (PFN_vkCmdSetRayTracingPipelineStackSizeKHR)pa(
-          device, "vkCmdSetRayTracingPipelineStackSizeKHR");
+    (PFN_vkCmdSetRayTracingPipelineStackSizeKHR)pa(
+      device, "vkCmdSetRayTracingPipelineStackSizeKHR");
   dt->AcquireProfilingLockKHR =
-      (PFN_vkAcquireProfilingLockKHR)pa(device, "vkAcquireProfilingLockKHR");
+    (PFN_vkAcquireProfilingLockKHR)pa(device, "vkAcquireProfilingLockKHR");
   dt->ReleaseProfilingLockKHR =
-      (PFN_vkReleaseProfilingLockKHR)pa(device, "vkReleaseProfilingLockKHR");
+    (PFN_vkReleaseProfilingLockKHR)pa(device, "vkReleaseProfilingLockKHR");
   dt->GetImageDrmFormatModifierPropertiesEXT =
-      (PFN_vkGetImageDrmFormatModifierPropertiesEXT)pa(
-          device, "vkGetImageDrmFormatModifierPropertiesEXT");
+    (PFN_vkGetImageDrmFormatModifierPropertiesEXT)pa(
+      device, "vkGetImageDrmFormatModifierPropertiesEXT");
   dt->GetBufferOpaqueCaptureAddress = (PFN_vkGetBufferOpaqueCaptureAddress)pa(
-      device, "vkGetBufferOpaqueCaptureAddress");
+    device, "vkGetBufferOpaqueCaptureAddress");
   dt->GetBufferOpaqueCaptureAddressKHR =
-      (PFN_vkGetBufferOpaqueCaptureAddressKHR)pa(
-          device, "vkGetBufferOpaqueCaptureAddressKHR");
+    (PFN_vkGetBufferOpaqueCaptureAddressKHR)pa(
+      device, "vkGetBufferOpaqueCaptureAddressKHR");
   dt->GetBufferDeviceAddress =
-      (PFN_vkGetBufferDeviceAddress)pa(device, "vkGetBufferDeviceAddress");
-  dt->GetBufferDeviceAddressKHR = (PFN_vkGetBufferDeviceAddressKHR)pa(
-      device, "vkGetBufferDeviceAddressKHR");
-  dt->GetBufferDeviceAddressEXT = (PFN_vkGetBufferDeviceAddressEXT)pa(
-      device, "vkGetBufferDeviceAddressEXT");
+    (PFN_vkGetBufferDeviceAddress)pa(device, "vkGetBufferDeviceAddress");
+  dt->GetBufferDeviceAddressKHR =
+    (PFN_vkGetBufferDeviceAddressKHR)pa(device, "vkGetBufferDeviceAddressKHR");
+  dt->GetBufferDeviceAddressEXT =
+    (PFN_vkGetBufferDeviceAddressEXT)pa(device, "vkGetBufferDeviceAddressEXT");
   dt->GetDeviceMemoryOpaqueCaptureAddress =
-      (PFN_vkGetDeviceMemoryOpaqueCaptureAddress)pa(
-          device, "vkGetDeviceMemoryOpaqueCaptureAddress");
+    (PFN_vkGetDeviceMemoryOpaqueCaptureAddress)pa(
+      device, "vkGetDeviceMemoryOpaqueCaptureAddress");
   dt->GetDeviceMemoryOpaqueCaptureAddressKHR =
-      (PFN_vkGetDeviceMemoryOpaqueCaptureAddressKHR)pa(
-          device, "vkGetDeviceMemoryOpaqueCaptureAddressKHR");
+    (PFN_vkGetDeviceMemoryOpaqueCaptureAddressKHR)pa(
+      device, "vkGetDeviceMemoryOpaqueCaptureAddressKHR");
   dt->GetPipelineExecutablePropertiesKHR =
-      (PFN_vkGetPipelineExecutablePropertiesKHR)pa(
-          device, "vkGetPipelineExecutablePropertiesKHR");
+    (PFN_vkGetPipelineExecutablePropertiesKHR)pa(
+      device, "vkGetPipelineExecutablePropertiesKHR");
   dt->GetPipelineExecutableStatisticsKHR =
-      (PFN_vkGetPipelineExecutableStatisticsKHR)pa(
-          device, "vkGetPipelineExecutableStatisticsKHR");
+    (PFN_vkGetPipelineExecutableStatisticsKHR)pa(
+      device, "vkGetPipelineExecutableStatisticsKHR");
   dt->GetPipelineExecutableInternalRepresentationsKHR =
-      (PFN_vkGetPipelineExecutableInternalRepresentationsKHR)pa(
-          device, "vkGetPipelineExecutableInternalRepresentationsKHR");
+    (PFN_vkGetPipelineExecutableInternalRepresentationsKHR)pa(
+      device, "vkGetPipelineExecutableInternalRepresentationsKHR");
   dt->CmdSetLineStippleEXT =
-      (PFN_vkCmdSetLineStippleEXT)pa(device, "vkCmdSetLineStippleEXT");
+    (PFN_vkCmdSetLineStippleEXT)pa(device, "vkCmdSetLineStippleEXT");
   dt->CreateAccelerationStructureKHR = (PFN_vkCreateAccelerationStructureKHR)pa(
-      device, "vkCreateAccelerationStructureKHR");
+    device, "vkCreateAccelerationStructureKHR");
   dt->CmdBuildAccelerationStructuresKHR =
-      (PFN_vkCmdBuildAccelerationStructuresKHR)pa(
-          device, "vkCmdBuildAccelerationStructuresKHR");
+    (PFN_vkCmdBuildAccelerationStructuresKHR)pa(
+      device, "vkCmdBuildAccelerationStructuresKHR");
   dt->CmdBuildAccelerationStructuresIndirectKHR =
-      (PFN_vkCmdBuildAccelerationStructuresIndirectKHR)pa(
-          device, "vkCmdBuildAccelerationStructuresIndirectKHR");
+    (PFN_vkCmdBuildAccelerationStructuresIndirectKHR)pa(
+      device, "vkCmdBuildAccelerationStructuresIndirectKHR");
   dt->BuildAccelerationStructuresKHR = (PFN_vkBuildAccelerationStructuresKHR)pa(
-      device, "vkBuildAccelerationStructuresKHR");
+    device, "vkBuildAccelerationStructuresKHR");
   dt->GetAccelerationStructureDeviceAddressKHR =
-      (PFN_vkGetAccelerationStructureDeviceAddressKHR)pa(
-          device, "vkGetAccelerationStructureDeviceAddressKHR");
+    (PFN_vkGetAccelerationStructureDeviceAddressKHR)pa(
+      device, "vkGetAccelerationStructureDeviceAddressKHR");
   dt->CreateDeferredOperationKHR = (PFN_vkCreateDeferredOperationKHR)pa(
-      device, "vkCreateDeferredOperationKHR");
+    device, "vkCreateDeferredOperationKHR");
   dt->DestroyDeferredOperationKHR = (PFN_vkDestroyDeferredOperationKHR)pa(
-      device, "vkDestroyDeferredOperationKHR");
+    device, "vkDestroyDeferredOperationKHR");
   dt->GetDeferredOperationMaxConcurrencyKHR =
-      (PFN_vkGetDeferredOperationMaxConcurrencyKHR)pa(
-          device, "vkGetDeferredOperationMaxConcurrencyKHR");
+    (PFN_vkGetDeferredOperationMaxConcurrencyKHR)pa(
+      device, "vkGetDeferredOperationMaxConcurrencyKHR");
   dt->GetDeferredOperationResultKHR = (PFN_vkGetDeferredOperationResultKHR)pa(
-      device, "vkGetDeferredOperationResultKHR");
+    device, "vkGetDeferredOperationResultKHR");
   dt->DeferredOperationJoinKHR =
-      (PFN_vkDeferredOperationJoinKHR)pa(device, "vkDeferredOperationJoinKHR");
+    (PFN_vkDeferredOperationJoinKHR)pa(device, "vkDeferredOperationJoinKHR");
   dt->CmdSetCullModeEXT =
-      (PFN_vkCmdSetCullModeEXT)pa(device, "vkCmdSetCullModeEXT");
+    (PFN_vkCmdSetCullModeEXT)pa(device, "vkCmdSetCullModeEXT");
   dt->CmdSetFrontFaceEXT =
-      (PFN_vkCmdSetFrontFaceEXT)pa(device, "vkCmdSetFrontFaceEXT");
+    (PFN_vkCmdSetFrontFaceEXT)pa(device, "vkCmdSetFrontFaceEXT");
   dt->CmdSetPrimitiveTopologyEXT = (PFN_vkCmdSetPrimitiveTopologyEXT)pa(
-      device, "vkCmdSetPrimitiveTopologyEXT");
+    device, "vkCmdSetPrimitiveTopologyEXT");
   dt->CmdSetViewportWithCountEXT = (PFN_vkCmdSetViewportWithCountEXT)pa(
-      device, "vkCmdSetViewportWithCountEXT");
-  dt->CmdSetScissorWithCountEXT = (PFN_vkCmdSetScissorWithCountEXT)pa(
-      device, "vkCmdSetScissorWithCountEXT");
+    device, "vkCmdSetViewportWithCountEXT");
+  dt->CmdSetScissorWithCountEXT =
+    (PFN_vkCmdSetScissorWithCountEXT)pa(device, "vkCmdSetScissorWithCountEXT");
   dt->CmdBindVertexBuffers2EXT =
-      (PFN_vkCmdBindVertexBuffers2EXT)pa(device, "vkCmdBindVertexBuffers2EXT");
+    (PFN_vkCmdBindVertexBuffers2EXT)pa(device, "vkCmdBindVertexBuffers2EXT");
   dt->CmdSetDepthTestEnableEXT =
-      (PFN_vkCmdSetDepthTestEnableEXT)pa(device, "vkCmdSetDepthTestEnableEXT");
-  dt->CmdSetDepthWriteEnableEXT = (PFN_vkCmdSetDepthWriteEnableEXT)pa(
-      device, "vkCmdSetDepthWriteEnableEXT");
+    (PFN_vkCmdSetDepthTestEnableEXT)pa(device, "vkCmdSetDepthTestEnableEXT");
+  dt->CmdSetDepthWriteEnableEXT =
+    (PFN_vkCmdSetDepthWriteEnableEXT)pa(device, "vkCmdSetDepthWriteEnableEXT");
   dt->CmdSetDepthCompareOpEXT =
-      (PFN_vkCmdSetDepthCompareOpEXT)pa(device, "vkCmdSetDepthCompareOpEXT");
+    (PFN_vkCmdSetDepthCompareOpEXT)pa(device, "vkCmdSetDepthCompareOpEXT");
   dt->CmdSetDepthBoundsTestEnableEXT = (PFN_vkCmdSetDepthBoundsTestEnableEXT)pa(
-      device, "vkCmdSetDepthBoundsTestEnableEXT");
+    device, "vkCmdSetDepthBoundsTestEnableEXT");
   dt->CmdSetStencilTestEnableEXT = (PFN_vkCmdSetStencilTestEnableEXT)pa(
-      device, "vkCmdSetStencilTestEnableEXT");
+    device, "vkCmdSetStencilTestEnableEXT");
   dt->CmdSetStencilOpEXT =
-      (PFN_vkCmdSetStencilOpEXT)pa(device, "vkCmdSetStencilOpEXT");
+    (PFN_vkCmdSetStencilOpEXT)pa(device, "vkCmdSetStencilOpEXT");
   dt->CmdSetPatchControlPointsEXT = (PFN_vkCmdSetPatchControlPointsEXT)pa(
-      device, "vkCmdSetPatchControlPointsEXT");
+    device, "vkCmdSetPatchControlPointsEXT");
   dt->CmdSetRasterizerDiscardEnableEXT =
-      (PFN_vkCmdSetRasterizerDiscardEnableEXT)pa(
-          device, "vkCmdSetRasterizerDiscardEnableEXT");
+    (PFN_vkCmdSetRasterizerDiscardEnableEXT)pa(
+      device, "vkCmdSetRasterizerDiscardEnableEXT");
   dt->CmdSetDepthBiasEnableEXT =
-      (PFN_vkCmdSetDepthBiasEnableEXT)pa(device, "vkCmdSetDepthBiasEnableEXT");
+    (PFN_vkCmdSetDepthBiasEnableEXT)pa(device, "vkCmdSetDepthBiasEnableEXT");
   dt->CmdSetLogicOpEXT =
-      (PFN_vkCmdSetLogicOpEXT)pa(device, "vkCmdSetLogicOpEXT");
+    (PFN_vkCmdSetLogicOpEXT)pa(device, "vkCmdSetLogicOpEXT");
   dt->CmdSetPrimitiveRestartEnableEXT =
-      (PFN_vkCmdSetPrimitiveRestartEnableEXT)pa(
-          device, "vkCmdSetPrimitiveRestartEnableEXT");
+    (PFN_vkCmdSetPrimitiveRestartEnableEXT)pa(
+      device, "vkCmdSetPrimitiveRestartEnableEXT");
   dt->CmdCopyBuffer2KHR =
-      (PFN_vkCmdCopyBuffer2KHR)pa(device, "vkCmdCopyBuffer2KHR");
+    (PFN_vkCmdCopyBuffer2KHR)pa(device, "vkCmdCopyBuffer2KHR");
   dt->CmdCopyImage2KHR =
-      (PFN_vkCmdCopyImage2KHR)pa(device, "vkCmdCopyImage2KHR");
+    (PFN_vkCmdCopyImage2KHR)pa(device, "vkCmdCopyImage2KHR");
   dt->CmdBlitImage2KHR =
-      (PFN_vkCmdBlitImage2KHR)pa(device, "vkCmdBlitImage2KHR");
+    (PFN_vkCmdBlitImage2KHR)pa(device, "vkCmdBlitImage2KHR");
   dt->CmdCopyBufferToImage2KHR =
-      (PFN_vkCmdCopyBufferToImage2KHR)pa(device, "vkCmdCopyBufferToImage2KHR");
+    (PFN_vkCmdCopyBufferToImage2KHR)pa(device, "vkCmdCopyBufferToImage2KHR");
   dt->CmdCopyImageToBuffer2KHR =
-      (PFN_vkCmdCopyImageToBuffer2KHR)pa(device, "vkCmdCopyImageToBuffer2KHR");
+    (PFN_vkCmdCopyImageToBuffer2KHR)pa(device, "vkCmdCopyImageToBuffer2KHR");
   dt->CmdResolveImage2KHR =
-      (PFN_vkCmdResolveImage2KHR)pa(device, "vkCmdResolveImage2KHR");
+    (PFN_vkCmdResolveImage2KHR)pa(device, "vkCmdResolveImage2KHR");
   dt->CmdSetFragmentShadingRateKHR = (PFN_vkCmdSetFragmentShadingRateKHR)pa(
-      device, "vkCmdSetFragmentShadingRateKHR");
+    device, "vkCmdSetFragmentShadingRateKHR");
   dt->GetAccelerationStructureBuildSizesKHR =
-      (PFN_vkGetAccelerationStructureBuildSizesKHR)pa(
-          device, "vkGetAccelerationStructureBuildSizesKHR");
+    (PFN_vkGetAccelerationStructureBuildSizesKHR)pa(
+      device, "vkGetAccelerationStructureBuildSizesKHR");
   dt->CmdSetVertexInputEXT =
-      (PFN_vkCmdSetVertexInputEXT)pa(device, "vkCmdSetVertexInputEXT");
-  dt->CmdSetColorWriteEnableEXT = (PFN_vkCmdSetColorWriteEnableEXT)pa(
-      device, "vkCmdSetColorWriteEnableEXT");
+    (PFN_vkCmdSetVertexInputEXT)pa(device, "vkCmdSetVertexInputEXT");
+  dt->CmdSetColorWriteEnableEXT =
+    (PFN_vkCmdSetColorWriteEnableEXT)pa(device, "vkCmdSetColorWriteEnableEXT");
   dt->CmdSetEvent2KHR = (PFN_vkCmdSetEvent2KHR)pa(device, "vkCmdSetEvent2KHR");
   dt->CmdResetEvent2KHR =
-      (PFN_vkCmdResetEvent2KHR)pa(device, "vkCmdResetEvent2KHR");
+    (PFN_vkCmdResetEvent2KHR)pa(device, "vkCmdResetEvent2KHR");
   dt->CmdWaitEvents2KHR =
-      (PFN_vkCmdWaitEvents2KHR)pa(device, "vkCmdWaitEvents2KHR");
+    (PFN_vkCmdWaitEvents2KHR)pa(device, "vkCmdWaitEvents2KHR");
   dt->CmdPipelineBarrier2KHR =
-      (PFN_vkCmdPipelineBarrier2KHR)pa(device, "vkCmdPipelineBarrier2KHR");
+    (PFN_vkCmdPipelineBarrier2KHR)pa(device, "vkCmdPipelineBarrier2KHR");
   dt->QueueSubmit2KHR = (PFN_vkQueueSubmit2KHR)pa(device, "vkQueueSubmit2KHR");
   dt->CmdWriteTimestamp2KHR =
-      (PFN_vkCmdWriteTimestamp2KHR)pa(device, "vkCmdWriteTimestamp2KHR");
+    (PFN_vkCmdWriteTimestamp2KHR)pa(device, "vkCmdWriteTimestamp2KHR");
   dt->CmdWriteBufferMarker2AMD =
-      (PFN_vkCmdWriteBufferMarker2AMD)pa(device, "vkCmdWriteBufferMarker2AMD");
-  dt->GetQueueCheckpointData2NV = (PFN_vkGetQueueCheckpointData2NV)pa(
-      device, "vkGetQueueCheckpointData2NV");
+    (PFN_vkCmdWriteBufferMarker2AMD)pa(device, "vkCmdWriteBufferMarker2AMD");
+  dt->GetQueueCheckpointData2NV =
+    (PFN_vkGetQueueCheckpointData2NV)pa(device, "vkGetQueueCheckpointData2NV");
   dt->GetDeviceProcAddr =
-      (PFN_vkGetDeviceProcAddr)pa(device, "vkGetDeviceProcAddr");
+    (PFN_vkGetDeviceProcAddr)pa(device, "vkGetDeviceProcAddr");
   dt->DestroyDevice = (PFN_vkDestroyDevice)pa(device, "vkDestroyDevice");
   dt->EnumerateInstanceVersion =
-      (PFN_vkEnumerateInstanceVersion)pa(device, "vkEnumerateInstanceVersion");
+    (PFN_vkEnumerateInstanceVersion)pa(device, "vkEnumerateInstanceVersion");
   dt->EnumerateInstanceLayerProperties =
-      (PFN_vkEnumerateInstanceLayerProperties)pa(
-          device, "vkEnumerateInstanceLayerProperties");
+    (PFN_vkEnumerateInstanceLayerProperties)pa(
+      device, "vkEnumerateInstanceLayerProperties");
   dt->EnumerateInstanceExtensionProperties =
-      (PFN_vkEnumerateInstanceExtensionProperties)pa(
-          device, "vkEnumerateInstanceExtensionProperties");
+    (PFN_vkEnumerateInstanceExtensionProperties)pa(
+      device, "vkEnumerateInstanceExtensionProperties");
   dt->GetDeviceQueue = (PFN_vkGetDeviceQueue)pa(device, "vkGetDeviceQueue");
   dt->QueueSubmit = (PFN_vkQueueSubmit)pa(device, "vkQueueSubmit");
   dt->QueueWaitIdle = (PFN_vkQueueWaitIdle)pa(device, "vkQueueWaitIdle");
@@ -606,21 +604,21 @@ void InitDeviceDispatchTable(VkDevice device, PFN_vkGetDeviceProcAddr pa,
   dt->MapMemory = (PFN_vkMapMemory)pa(device, "vkMapMemory");
   dt->UnmapMemory = (PFN_vkUnmapMemory)pa(device, "vkUnmapMemory");
   dt->FlushMappedMemoryRanges =
-      (PFN_vkFlushMappedMemoryRanges)pa(device, "vkFlushMappedMemoryRanges");
+    (PFN_vkFlushMappedMemoryRanges)pa(device, "vkFlushMappedMemoryRanges");
   dt->InvalidateMappedMemoryRanges = (PFN_vkInvalidateMappedMemoryRanges)pa(
-      device, "vkInvalidateMappedMemoryRanges");
-  dt->GetDeviceMemoryCommitment = (PFN_vkGetDeviceMemoryCommitment)pa(
-      device, "vkGetDeviceMemoryCommitment");
+    device, "vkInvalidateMappedMemoryRanges");
+  dt->GetDeviceMemoryCommitment =
+    (PFN_vkGetDeviceMemoryCommitment)pa(device, "vkGetDeviceMemoryCommitment");
   dt->GetBufferMemoryRequirements = (PFN_vkGetBufferMemoryRequirements)pa(
-      device, "vkGetBufferMemoryRequirements");
+    device, "vkGetBufferMemoryRequirements");
   dt->BindBufferMemory =
-      (PFN_vkBindBufferMemory)pa(device, "vkBindBufferMemory");
+    (PFN_vkBindBufferMemory)pa(device, "vkBindBufferMemory");
   dt->GetImageMemoryRequirements = (PFN_vkGetImageMemoryRequirements)pa(
-      device, "vkGetImageMemoryRequirements");
+    device, "vkGetImageMemoryRequirements");
   dt->BindImageMemory = (PFN_vkBindImageMemory)pa(device, "vkBindImageMemory");
   dt->GetImageSparseMemoryRequirements =
-      (PFN_vkGetImageSparseMemoryRequirements)pa(
-          device, "vkGetImageSparseMemoryRequirements");
+    (PFN_vkGetImageSparseMemoryRequirements)pa(
+      device, "vkGetImageSparseMemoryRequirements");
   dt->QueueBindSparse = (PFN_vkQueueBindSparse)pa(device, "vkQueueBindSparse");
   dt->CreateFence = (PFN_vkCreateFence)pa(device, "vkCreateFence");
   dt->DestroyFence = (PFN_vkDestroyFence)pa(device, "vkDestroyFence");
@@ -629,7 +627,7 @@ void InitDeviceDispatchTable(VkDevice device, PFN_vkGetDeviceProcAddr pa,
   dt->WaitForFences = (PFN_vkWaitForFences)pa(device, "vkWaitForFences");
   dt->CreateSemaphore = (PFN_vkCreateSemaphore)pa(device, "vkCreateSemaphore");
   dt->DestroySemaphore =
-      (PFN_vkDestroySemaphore)pa(device, "vkDestroySemaphore");
+    (PFN_vkDestroySemaphore)pa(device, "vkDestroySemaphore");
   dt->CreateEvent = (PFN_vkCreateEvent)pa(device, "vkCreateEvent");
   dt->DestroyEvent = (PFN_vkDestroyEvent)pa(device, "vkDestroyEvent");
   dt->GetEventStatus = (PFN_vkGetEventStatus)pa(device, "vkGetEventStatus");
@@ -637,154 +635,154 @@ void InitDeviceDispatchTable(VkDevice device, PFN_vkGetDeviceProcAddr pa,
   dt->ResetEvent = (PFN_vkResetEvent)pa(device, "vkResetEvent");
   dt->CreateQueryPool = (PFN_vkCreateQueryPool)pa(device, "vkCreateQueryPool");
   dt->DestroyQueryPool =
-      (PFN_vkDestroyQueryPool)pa(device, "vkDestroyQueryPool");
+    (PFN_vkDestroyQueryPool)pa(device, "vkDestroyQueryPool");
   dt->GetQueryPoolResults =
-      (PFN_vkGetQueryPoolResults)pa(device, "vkGetQueryPoolResults");
+    (PFN_vkGetQueryPoolResults)pa(device, "vkGetQueryPoolResults");
   dt->CreateBuffer = (PFN_vkCreateBuffer)pa(device, "vkCreateBuffer");
   dt->DestroyBuffer = (PFN_vkDestroyBuffer)pa(device, "vkDestroyBuffer");
   dt->CreateBufferView =
-      (PFN_vkCreateBufferView)pa(device, "vkCreateBufferView");
+    (PFN_vkCreateBufferView)pa(device, "vkCreateBufferView");
   dt->DestroyBufferView =
-      (PFN_vkDestroyBufferView)pa(device, "vkDestroyBufferView");
+    (PFN_vkDestroyBufferView)pa(device, "vkDestroyBufferView");
   dt->CreateImage = (PFN_vkCreateImage)pa(device, "vkCreateImage");
   dt->DestroyImage = (PFN_vkDestroyImage)pa(device, "vkDestroyImage");
-  dt->GetImageSubresourceLayout = (PFN_vkGetImageSubresourceLayout)pa(
-      device, "vkGetImageSubresourceLayout");
+  dt->GetImageSubresourceLayout =
+    (PFN_vkGetImageSubresourceLayout)pa(device, "vkGetImageSubresourceLayout");
   dt->CreateImageView = (PFN_vkCreateImageView)pa(device, "vkCreateImageView");
   dt->DestroyImageView =
-      (PFN_vkDestroyImageView)pa(device, "vkDestroyImageView");
+    (PFN_vkDestroyImageView)pa(device, "vkDestroyImageView");
   dt->CreateShaderModule =
-      (PFN_vkCreateShaderModule)pa(device, "vkCreateShaderModule");
+    (PFN_vkCreateShaderModule)pa(device, "vkCreateShaderModule");
   dt->DestroyShaderModule =
-      (PFN_vkDestroyShaderModule)pa(device, "vkDestroyShaderModule");
+    (PFN_vkDestroyShaderModule)pa(device, "vkDestroyShaderModule");
   dt->CreatePipelineCache =
-      (PFN_vkCreatePipelineCache)pa(device, "vkCreatePipelineCache");
+    (PFN_vkCreatePipelineCache)pa(device, "vkCreatePipelineCache");
   dt->DestroyPipelineCache =
-      (PFN_vkDestroyPipelineCache)pa(device, "vkDestroyPipelineCache");
+    (PFN_vkDestroyPipelineCache)pa(device, "vkDestroyPipelineCache");
   dt->GetPipelineCacheData =
-      (PFN_vkGetPipelineCacheData)pa(device, "vkGetPipelineCacheData");
+    (PFN_vkGetPipelineCacheData)pa(device, "vkGetPipelineCacheData");
   dt->MergePipelineCaches =
-      (PFN_vkMergePipelineCaches)pa(device, "vkMergePipelineCaches");
+    (PFN_vkMergePipelineCaches)pa(device, "vkMergePipelineCaches");
   dt->CreateGraphicsPipelines =
-      (PFN_vkCreateGraphicsPipelines)pa(device, "vkCreateGraphicsPipelines");
+    (PFN_vkCreateGraphicsPipelines)pa(device, "vkCreateGraphicsPipelines");
   dt->CreateComputePipelines =
-      (PFN_vkCreateComputePipelines)pa(device, "vkCreateComputePipelines");
+    (PFN_vkCreateComputePipelines)pa(device, "vkCreateComputePipelines");
   dt->DestroyPipeline = (PFN_vkDestroyPipeline)pa(device, "vkDestroyPipeline");
   dt->CreatePipelineLayout =
-      (PFN_vkCreatePipelineLayout)pa(device, "vkCreatePipelineLayout");
+    (PFN_vkCreatePipelineLayout)pa(device, "vkCreatePipelineLayout");
   dt->DestroyPipelineLayout =
-      (PFN_vkDestroyPipelineLayout)pa(device, "vkDestroyPipelineLayout");
+    (PFN_vkDestroyPipelineLayout)pa(device, "vkDestroyPipelineLayout");
   dt->CreateSampler = (PFN_vkCreateSampler)pa(device, "vkCreateSampler");
   dt->DestroySampler = (PFN_vkDestroySampler)pa(device, "vkDestroySampler");
-  dt->CreateDescriptorSetLayout = (PFN_vkCreateDescriptorSetLayout)pa(
-      device, "vkCreateDescriptorSetLayout");
+  dt->CreateDescriptorSetLayout =
+    (PFN_vkCreateDescriptorSetLayout)pa(device, "vkCreateDescriptorSetLayout");
   dt->DestroyDescriptorSetLayout = (PFN_vkDestroyDescriptorSetLayout)pa(
-      device, "vkDestroyDescriptorSetLayout");
+    device, "vkDestroyDescriptorSetLayout");
   dt->CreateDescriptorPool =
-      (PFN_vkCreateDescriptorPool)pa(device, "vkCreateDescriptorPool");
+    (PFN_vkCreateDescriptorPool)pa(device, "vkCreateDescriptorPool");
   dt->DestroyDescriptorPool =
-      (PFN_vkDestroyDescriptorPool)pa(device, "vkDestroyDescriptorPool");
+    (PFN_vkDestroyDescriptorPool)pa(device, "vkDestroyDescriptorPool");
   dt->ResetDescriptorPool =
-      (PFN_vkResetDescriptorPool)pa(device, "vkResetDescriptorPool");
+    (PFN_vkResetDescriptorPool)pa(device, "vkResetDescriptorPool");
   dt->AllocateDescriptorSets =
-      (PFN_vkAllocateDescriptorSets)pa(device, "vkAllocateDescriptorSets");
+    (PFN_vkAllocateDescriptorSets)pa(device, "vkAllocateDescriptorSets");
   dt->FreeDescriptorSets =
-      (PFN_vkFreeDescriptorSets)pa(device, "vkFreeDescriptorSets");
+    (PFN_vkFreeDescriptorSets)pa(device, "vkFreeDescriptorSets");
   dt->UpdateDescriptorSets =
-      (PFN_vkUpdateDescriptorSets)pa(device, "vkUpdateDescriptorSets");
+    (PFN_vkUpdateDescriptorSets)pa(device, "vkUpdateDescriptorSets");
   dt->CreateFramebuffer =
-      (PFN_vkCreateFramebuffer)pa(device, "vkCreateFramebuffer");
+    (PFN_vkCreateFramebuffer)pa(device, "vkCreateFramebuffer");
   dt->DestroyFramebuffer =
-      (PFN_vkDestroyFramebuffer)pa(device, "vkDestroyFramebuffer");
+    (PFN_vkDestroyFramebuffer)pa(device, "vkDestroyFramebuffer");
   dt->CreateRenderPass =
-      (PFN_vkCreateRenderPass)pa(device, "vkCreateRenderPass");
+    (PFN_vkCreateRenderPass)pa(device, "vkCreateRenderPass");
   dt->DestroyRenderPass =
-      (PFN_vkDestroyRenderPass)pa(device, "vkDestroyRenderPass");
+    (PFN_vkDestroyRenderPass)pa(device, "vkDestroyRenderPass");
   dt->GetRenderAreaGranularity =
-      (PFN_vkGetRenderAreaGranularity)pa(device, "vkGetRenderAreaGranularity");
+    (PFN_vkGetRenderAreaGranularity)pa(device, "vkGetRenderAreaGranularity");
   dt->CreateCommandPool =
-      (PFN_vkCreateCommandPool)pa(device, "vkCreateCommandPool");
+    (PFN_vkCreateCommandPool)pa(device, "vkCreateCommandPool");
   dt->DestroyCommandPool =
-      (PFN_vkDestroyCommandPool)pa(device, "vkDestroyCommandPool");
+    (PFN_vkDestroyCommandPool)pa(device, "vkDestroyCommandPool");
   dt->ResetCommandPool =
-      (PFN_vkResetCommandPool)pa(device, "vkResetCommandPool");
+    (PFN_vkResetCommandPool)pa(device, "vkResetCommandPool");
   dt->AllocateCommandBuffers =
-      (PFN_vkAllocateCommandBuffers)pa(device, "vkAllocateCommandBuffers");
+    (PFN_vkAllocateCommandBuffers)pa(device, "vkAllocateCommandBuffers");
   dt->FreeCommandBuffers =
-      (PFN_vkFreeCommandBuffers)pa(device, "vkFreeCommandBuffers");
+    (PFN_vkFreeCommandBuffers)pa(device, "vkFreeCommandBuffers");
   dt->BeginCommandBuffer =
-      (PFN_vkBeginCommandBuffer)pa(device, "vkBeginCommandBuffer");
+    (PFN_vkBeginCommandBuffer)pa(device, "vkBeginCommandBuffer");
   dt->EndCommandBuffer =
-      (PFN_vkEndCommandBuffer)pa(device, "vkEndCommandBuffer");
+    (PFN_vkEndCommandBuffer)pa(device, "vkEndCommandBuffer");
   dt->ResetCommandBuffer =
-      (PFN_vkResetCommandBuffer)pa(device, "vkResetCommandBuffer");
+    (PFN_vkResetCommandBuffer)pa(device, "vkResetCommandBuffer");
   dt->CmdBindPipeline = (PFN_vkCmdBindPipeline)pa(device, "vkCmdBindPipeline");
   dt->CmdSetViewport = (PFN_vkCmdSetViewport)pa(device, "vkCmdSetViewport");
   dt->CmdSetScissor = (PFN_vkCmdSetScissor)pa(device, "vkCmdSetScissor");
   dt->CmdSetLineWidth = (PFN_vkCmdSetLineWidth)pa(device, "vkCmdSetLineWidth");
   dt->CmdSetDepthBias = (PFN_vkCmdSetDepthBias)pa(device, "vkCmdSetDepthBias");
   dt->CmdSetBlendConstants =
-      (PFN_vkCmdSetBlendConstants)pa(device, "vkCmdSetBlendConstants");
+    (PFN_vkCmdSetBlendConstants)pa(device, "vkCmdSetBlendConstants");
   dt->CmdSetDepthBounds =
-      (PFN_vkCmdSetDepthBounds)pa(device, "vkCmdSetDepthBounds");
+    (PFN_vkCmdSetDepthBounds)pa(device, "vkCmdSetDepthBounds");
   dt->CmdSetStencilCompareMask =
-      (PFN_vkCmdSetStencilCompareMask)pa(device, "vkCmdSetStencilCompareMask");
+    (PFN_vkCmdSetStencilCompareMask)pa(device, "vkCmdSetStencilCompareMask");
   dt->CmdSetStencilWriteMask =
-      (PFN_vkCmdSetStencilWriteMask)pa(device, "vkCmdSetStencilWriteMask");
+    (PFN_vkCmdSetStencilWriteMask)pa(device, "vkCmdSetStencilWriteMask");
   dt->CmdSetStencilReference =
-      (PFN_vkCmdSetStencilReference)pa(device, "vkCmdSetStencilReference");
+    (PFN_vkCmdSetStencilReference)pa(device, "vkCmdSetStencilReference");
   dt->CmdBindDescriptorSets =
-      (PFN_vkCmdBindDescriptorSets)pa(device, "vkCmdBindDescriptorSets");
+    (PFN_vkCmdBindDescriptorSets)pa(device, "vkCmdBindDescriptorSets");
   dt->CmdBindIndexBuffer =
-      (PFN_vkCmdBindIndexBuffer)pa(device, "vkCmdBindIndexBuffer");
+    (PFN_vkCmdBindIndexBuffer)pa(device, "vkCmdBindIndexBuffer");
   dt->CmdBindVertexBuffers =
-      (PFN_vkCmdBindVertexBuffers)pa(device, "vkCmdBindVertexBuffers");
+    (PFN_vkCmdBindVertexBuffers)pa(device, "vkCmdBindVertexBuffers");
   dt->CmdDraw = (PFN_vkCmdDraw)pa(device, "vkCmdDraw");
   dt->CmdDrawIndexed = (PFN_vkCmdDrawIndexed)pa(device, "vkCmdDrawIndexed");
   dt->CmdDrawIndirect = (PFN_vkCmdDrawIndirect)pa(device, "vkCmdDrawIndirect");
   dt->CmdDrawIndexedIndirect =
-      (PFN_vkCmdDrawIndexedIndirect)pa(device, "vkCmdDrawIndexedIndirect");
+    (PFN_vkCmdDrawIndexedIndirect)pa(device, "vkCmdDrawIndexedIndirect");
   dt->CmdDispatch = (PFN_vkCmdDispatch)pa(device, "vkCmdDispatch");
   dt->CmdDispatchIndirect =
-      (PFN_vkCmdDispatchIndirect)pa(device, "vkCmdDispatchIndirect");
+    (PFN_vkCmdDispatchIndirect)pa(device, "vkCmdDispatchIndirect");
   dt->CmdCopyBuffer = (PFN_vkCmdCopyBuffer)pa(device, "vkCmdCopyBuffer");
   dt->CmdCopyImage = (PFN_vkCmdCopyImage)pa(device, "vkCmdCopyImage");
   dt->CmdBlitImage = (PFN_vkCmdBlitImage)pa(device, "vkCmdBlitImage");
   dt->CmdCopyBufferToImage =
-      (PFN_vkCmdCopyBufferToImage)pa(device, "vkCmdCopyBufferToImage");
+    (PFN_vkCmdCopyBufferToImage)pa(device, "vkCmdCopyBufferToImage");
   dt->CmdCopyImageToBuffer =
-      (PFN_vkCmdCopyImageToBuffer)pa(device, "vkCmdCopyImageToBuffer");
+    (PFN_vkCmdCopyImageToBuffer)pa(device, "vkCmdCopyImageToBuffer");
   dt->CmdUpdateBuffer = (PFN_vkCmdUpdateBuffer)pa(device, "vkCmdUpdateBuffer");
   dt->CmdFillBuffer = (PFN_vkCmdFillBuffer)pa(device, "vkCmdFillBuffer");
   dt->CmdClearColorImage =
-      (PFN_vkCmdClearColorImage)pa(device, "vkCmdClearColorImage");
-  dt->CmdClearDepthStencilImage = (PFN_vkCmdClearDepthStencilImage)pa(
-      device, "vkCmdClearDepthStencilImage");
+    (PFN_vkCmdClearColorImage)pa(device, "vkCmdClearColorImage");
+  dt->CmdClearDepthStencilImage =
+    (PFN_vkCmdClearDepthStencilImage)pa(device, "vkCmdClearDepthStencilImage");
   dt->CmdClearAttachments =
-      (PFN_vkCmdClearAttachments)pa(device, "vkCmdClearAttachments");
+    (PFN_vkCmdClearAttachments)pa(device, "vkCmdClearAttachments");
   dt->CmdResolveImage = (PFN_vkCmdResolveImage)pa(device, "vkCmdResolveImage");
   dt->CmdSetEvent = (PFN_vkCmdSetEvent)pa(device, "vkCmdSetEvent");
   dt->CmdResetEvent = (PFN_vkCmdResetEvent)pa(device, "vkCmdResetEvent");
   dt->CmdWaitEvents = (PFN_vkCmdWaitEvents)pa(device, "vkCmdWaitEvents");
   dt->CmdPipelineBarrier =
-      (PFN_vkCmdPipelineBarrier)pa(device, "vkCmdPipelineBarrier");
+    (PFN_vkCmdPipelineBarrier)pa(device, "vkCmdPipelineBarrier");
   dt->CmdBeginQuery = (PFN_vkCmdBeginQuery)pa(device, "vkCmdBeginQuery");
   dt->CmdEndQuery = (PFN_vkCmdEndQuery)pa(device, "vkCmdEndQuery");
   dt->CmdResetQueryPool =
-      (PFN_vkCmdResetQueryPool)pa(device, "vkCmdResetQueryPool");
+    (PFN_vkCmdResetQueryPool)pa(device, "vkCmdResetQueryPool");
   dt->CmdWriteTimestamp =
-      (PFN_vkCmdWriteTimestamp)pa(device, "vkCmdWriteTimestamp");
+    (PFN_vkCmdWriteTimestamp)pa(device, "vkCmdWriteTimestamp");
   dt->CmdCopyQueryPoolResults =
-      (PFN_vkCmdCopyQueryPoolResults)pa(device, "vkCmdCopyQueryPoolResults");
+    (PFN_vkCmdCopyQueryPoolResults)pa(device, "vkCmdCopyQueryPoolResults");
   dt->CmdPushConstants =
-      (PFN_vkCmdPushConstants)pa(device, "vkCmdPushConstants");
+    (PFN_vkCmdPushConstants)pa(device, "vkCmdPushConstants");
   dt->CmdBeginRenderPass =
-      (PFN_vkCmdBeginRenderPass)pa(device, "vkCmdBeginRenderPass");
+    (PFN_vkCmdBeginRenderPass)pa(device, "vkCmdBeginRenderPass");
   dt->CmdNextSubpass = (PFN_vkCmdNextSubpass)pa(device, "vkCmdNextSubpass");
   dt->CmdEndRenderPass =
-      (PFN_vkCmdEndRenderPass)pa(device, "vkCmdEndRenderPass");
+    (PFN_vkCmdEndRenderPass)pa(device, "vkCmdEndRenderPass");
   dt->CmdExecuteCommands =
-      (PFN_vkCmdExecuteCommands)pa(device, "vkCmdExecuteCommands");
+    (PFN_vkCmdExecuteCommands)pa(device, "vkCmdExecuteCommands");
   dt->GetDeviceQueue2 = (PFN_vkGetDeviceQueue2)pa(device, "vkGetDeviceQueue2");
 
 #ifdef VK_USE_PLATFORM_GGP
