@@ -58,7 +58,7 @@ set(CMAKE_EXE_LINKER_FLAGS " -static")
 
 message(STATUS "Generated dir:${GENERATED_DIR}")
 target_include_directories(${target_name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
-                                                  ${VULKAN_DIR}/include
+                                                  ${CMAKE_SOURCE_DIR}/third_party/Vulkan-Headers/include
                                                   ${GENERATED_DIR})
 
 if(WIN32)
